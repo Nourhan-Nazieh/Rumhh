@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رمح - الباقات والأسعار</title>
+    
+  <!-- ___ــــــــLogoـــــــ -->
+    <link rel="icon" href="./assets/images/logo..svg " />     
+    <!-- Bootstrap CSS -->
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="assets/CSS/all.min.css">
+    <!-- Custom CSS -->
+   <link rel="stylesheet" href="assets/CSS/pricing.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    
+    <!-- ============================================
+         Start Header
+    ============================================ -->
+<header class="header-section">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- شعار الموقع -->
+            <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Ramh Logo" style="height: 40px;" />
+            </a>
+            
+            <!-- زر القائمة للموبايل -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- قائمة التنقل -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <i class="fas fa-home"></i> الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-store"></i> المتجر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">
+                            <i class="fas fa-dollar-sign"></i> الاسعار
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-headset"></i> الدعم الفني
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- أزرار تسجيل الدخول والتجربة المجانية -->
+                <div class="d-flex">
+                    <a href="login.html">
+                        <button class="btn btn-login me-2">تسجيل دخول</button>
+                    </a>
+                    <a href="pricing.html">
+                        <button class="btn btn-trial">ابدأ 7 ايام مجانا</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- ============================================
+     Start Pricing Section
+    ============================================ -->
+<section class="packages-section py-5">
+    <div class="container">
+        <!-- Page Title -->
+        <div class="text-center mb-5 mt-lg-5 pt-5 pb-4">
+            <h1 class="packages-title">باقات رمح</h1>
+            <div class="currency-selector">
+                <span class="currency-label">اختر العملة لعرض الأسعار</span>
+                <div class="dropdown">
+                    <button class="btn btn-currency dropdown-toggle" type="button" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-coins me-2"></i>
+                        الريال السعودي - SAR
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                        <li><a class="dropdown-item" href="#">الريال السعودي - SAR</a></li>
+                        <li><a class="dropdown-item" href="#">الدولار الأمريكي - USD</a></li>
+                        <li><a class="dropdown-item" href="#">اليورو - EUR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Packages Cards -->
+        <div class="row justify-content-center ">
+            <!-- Basic Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="package-card basic-package">
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="package-name">مناسب للشخاص</h3>
+                        <h4 class="package-subtitle">عادية</h4>
+                    </div>
+                    <div class="package-description">
+                        يناسب بداية أعمالك التجارية ومناسبة للمتاجر الصغيرة وبدون خصائص متقدمة في الخوارزميات الذكية
+                    </div>
+                    <div class="package-price">
+                        <span class="price-amount">50</span>
+                        <span class="price-currency">ر.س</span>
+                        <span class="price-period">/شهرياً</span>
+                    </div>
+                    <div class="package-features">
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>عدد غير محدود من المنتجات</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>عدد غير محدود من الطلبات</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>إمكانيات لفتح سلة المجتمع</span>
+                        </div>
+                        <div class="feature-item excluded">
+                            <i class="fas fa-times"></i>
+                            <span>إعداد في أدوات المنتجات</span>
+                        </div>
+                        <div class="feature-item excluded">
+                            <i class="fas fa-times"></i>
+                            <span>تفعيل الدفع الإلكتروني</span>
+                        </div>
+                    </div>
+                    <div class="package-additional">
+                        <button class="btn-additional" type="button" data-bs-toggle="collapse" data-bs-target="#basicAdditional" aria-expanded="false">
+                            <span>مزيد من المعلومات</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="basicAdditional">
+                            <div class="additional-content">
+                                <p>معلومات إضافية عن الباقة العادية...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-package-select">ابدأ الآن</button>
+                </div>
+            </div>
+
+            <!-- Premium Package (Featured) -->
+            <div class="col-lg-4 col-md-6">
+                <div class="package-card premium-package featured">
+                    <div class="featured-badge">مُختارة</div>
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3 class="package-name">للمتاجر الحديثة</h3>
+                        <h4 class="package-subtitle">محترفة</h4>
+                    </div>
+                    <div class="package-description">
+                        رمح بخصائص متقدمة ومناسب لأصحاب المتاجر الكبيرة أو متوسطة الحجم
+                    </div>
+                    <div class="package-price">
+                        <span class="price-amount">150</span>
+                        <span class="price-currency">ر.س</span>
+                        <span class="price-period">/شهرياً</span>
+                    </div>
+                    <div class="package-features">
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>عدد غير محدود من المنتجات</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>عدد غير محدود من الطلبات</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>إمكانيات لفتح سلة المجتمع</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>تفعيل في أدوات المنتجات</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>تفعيل الدفع الإلكتروني</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>عروض وخصومات، الشحن المتقدم</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>التحليل البحثي</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>الدعم عبر الواتساب</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>ربط خارجية الجرد</span>
+                        </div>
+                    </div>
+                    <div class="package-additional">
+                        <button class="btn-additional" type="button" data-bs-toggle="collapse" data-bs-target="#premiumAdditional" aria-expanded="false">
+                            <span>مزيد من المعلومات</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="premiumAdditional">
+                            <div class="additional-content">
+                                <p>معلومات إضافية عن الباقة المحترفة...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-package-select featured-btn">ابدأ الآن</button>
+                </div>
+            </div>
+
+            <!-- Enterprise Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="package-card enterprise-package">
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="package-name">للمتاجر الكبيرة</h3>
+                        <h4 class="package-subtitle">مؤسسية</h4>
+                    </div>
+                    <div class="package-description">
+                        رمح بيوفر حلول متكاملة، لمواقع احترافية تناسب المتاجر الكبيرة والمتقدمة
+                    </div>
+                    <div class="package-price">
+                        <span class="price-amount">300</span>
+                        <span class="price-currency">ر.س</span>
+                        <span class="price-period">/شهرياً</span>
+                    </div>
+                    <div class="package-features">
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>عدد غير محدود من المنتجات</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>عدد غير محدود من الطلبات</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>إمكانيات لفتح سلة المجتمع</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>تفعيل في أدوات المنتجات</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>تفعيل الدفع الإلكتروني</span>
+                        </div>
+                        <div class="feature-item included">
+                            <i class="fas fa-check"></i>
+                            <span>تفعيل الدفع الإلكتروني</span>
+                        </div>
+                    </div>
+                    <div class="package-additional">
+                        <button class="btn-additional" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseAdditional" aria-expanded="false">
+                            <span>مزيد من المعلومات</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="enterpriseAdditional">
+                            <div class="additional-content">
+                                <p>معلومات إضافية عن الباقة المؤسسية...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-package-select">ابدأ الآن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ============================================
+          START Footer Section -->
+    <!-- ============================================ --> 
+  <footer class="footer-section bg-light pt-5 pb-3">
+    <div class="container">
+      <div class="row justify-content-between align-items-start gy-4">
+  
+        <!-- Logo & Description -->
+        <div class="col-md-4">
+          <div class="footer-brand mb-3">
+            <img src="assets/images/logo foot.svg" alt="Ramh Logo" class="footer-logo mb-3">
+            <p class="footer-description">
+              رمح بيقدملك مواقع مصممة خصيصًا ليك، سواء لسه بتبدأ مشروعك أو عندك شركة وعايز تطور شكلها أونلاين.
+            </p>
+          </div>
+        </div>
+  
+        <!-- About Links -->
+        <div class="col-6 col-md-2">
+          <h6 class="footer-title">عن رمح</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="pricing.html">ليه رمح؟</a></li>
+            <li><a href="#features">مميزات</a></li>
+            <li><a href="#goals">أهداف</a></li>
+            <li><a href="#projects">مشاريع</a></li>
+          </ul>
+        </div>
+  
+        <!-- Site Links -->
+        <div class="col-6 col-md-2">
+          <h6 class="footer-title">الموقع</h6>
+          <ul class="footer-links">
+            <li><a href="pricing.html">الباقات والأسعار</a></li>
+            <li><a href="#">ثيمات رمح</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter & Social -->
+        <div class="col-md-4">
+          <h6 class="footer-title">سجل بريدك واستقبل كل جديد</h6>
+          <form class="newsletter-form mb-3">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="ادخل بريدك الإلكتروني">
+            </div>
+          </form>
+          <div class="social-media">
+            <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <hr>
+  
+      <!-- Bottom Footer -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="copyright">© 2025 جميع الحقوق محفوظة لمنصة رمح</p>
+        <button class="btn-language">
+          <i class="fas fa-globe"></i>
+          <span>العربية</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+  
+<!-- END Footer Section -->
+
+    <!-- ============== مكتبات JavaScript ============== -->
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- ملف JavaScript المخصص -->
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
+

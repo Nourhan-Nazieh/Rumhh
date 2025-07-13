@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تغير الباسورد</title>
+ <!-- ___ــــــــLogoـــــــ -->
+    <link rel="icon" href="./assets/images/logo..svg " />     
+    <!-- Bootstrap CSS -->
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="assets/CSS/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+  <link rel="stylesheet" href="assets/CSS/reset.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-section">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="Ramh Logo" style="height: 40px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-store"></i> المتجر</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html"><i class="fas fa-dollar-sign"></i> الاسعار</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-headset"></i> الدعم الفني</a></li>
+          </ul>
+          <div class="d-flex">
+            <a href="login.html"><button class="btn btn-login me-2">تسجيل دخول</button></a>
+            <button class="btn btn-trial">ابدأ 7 ايام مجانا</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Reset Password Section -->
+  <section class="reset-password-section d-flex align-items-center justify-content-center py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Image Column -->
+        <div class="col-lg-6 d-none d-lg-block order-lg-2 order-first">
+          <div class="image-container text-center">
+            <img src="assets/images/verify.png" alt="Password Reset Illustration" class="img-fluid" />
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="col-lg-6 col-md-10 mx-auto order-lg-1">
+          <div class="reset-password-card p-4 p-md-5 shadow-lg rounded-3">
+            <div class="text-center mb-4">
+              <h2 class="reset-password-title fw-bold text-success">تغيير كلمة المرور</h2>
+            </div>
+            <form>
+              <!--1 -->
+              <div class="input-group mb-3 position-relative">
+                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                <input type="password" class="form-control form-control-lg" id="newPassword" placeholder="ادخل كلمة المرور الجديدة" />
+              </div>
+              <!-- 2 -->
+              <div class="input-group mb-3 position-relative">
+                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                 <input type="password" class="form-control form-control-lg" id="newPassword" placeholder="ادخل كلمة المرور الجديدة" />
+                </div>
+              <button type="submit" class="btn btn-success btn-lg w-100 text-center rounded-pill mt-3">تغيير كلمة المرور</button> 
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/JS/script.js"></script>
+</body>
+</html>

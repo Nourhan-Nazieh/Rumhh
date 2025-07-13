@@ -1,0 +1,163 @@
+/* ============ RESET ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f5f7f5;
+  direction: rtl;
+}
+
+/* ============ SECTION ============ */
+.business-types-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+/* ============ IMAGE ============ */
+.image-container {
+  background: linear-gradient(to bottom left, #f1f5f0, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.image-container img {
+  max-width: 80%;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* ============ CARD ============ */
+.business-types-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ============ PROGRESS BAR ============ */
+.progress {
+  height: 6px;
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #47b773;
+}
+
+/* ============ TEXTS ============ */
+.section-title {
+  color: #28a745;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.lead {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+/* ============ BUTTON GRID ============ */
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .business-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============ BUSINESS TAGS ============ */
+.business-type-btn {
+  border: 1px solid #28a745;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.business-type-btn.active {
+  background-color: #e7f6eb;
+  color: #28a745;
+  border-color: #28a745;
+}
+
+.business-type-btn.active i {
+  color: #28a745;
+  margin-right: 5px;
+}
+
+/* ============ BUTTONS ============ */
+.btn-success {
+  border: none;
+  color: #1a531f;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn-success:hover {
+  background-color: #89c7a1;
+}
+
+.btn-outline-secondary {
+  border: 1px solid #22422b;
+  background-color: #fff;
+  color: #1a531f;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #1a7d38;
+  color: #fff;
+}
+
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 991px) {
+  .business-types-section {
+    padding: 30px 0;
+  }
+
+  .business-types-card {
+    padding: 30px 20px;
+  }
+
+  .image-container {
+    display: none;
+  }
+}
+

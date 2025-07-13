@@ -1,0 +1,1073 @@
+/* Packages Page Specific Styles */
+
+/* Packages Section */
+.packages-section {
+    background-color: #f8fcf8;
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.packages-title {
+    font-size: 2.5rem;
+    color: #2E7D32;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Currency Selector */
+.currency-selector {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.currency-label {
+    display: block;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.btn-currency {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    color: #555;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-currency:hover {
+    border-color: #8BC34A;
+    color: #2E7D32;
+    background-color: #f8fcf8;
+}
+
+/* Package Cards */
+.package-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+}
+
+
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* Featured Package */
+.package-card.featured {
+    transform: scale(1.05);
+    border: 2px solid #28a745;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.2);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: linear-gradient(135deg, #cff6a2, #66BB6A);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    box-shadow: 0 4px 15px rgba(139, 195, 74, 0.3);
+}
+
+/* Package Header */
+.package-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.package-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 1.5rem;
+}
+
+.basic-package .package-icon {
+    background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+    color: #2E7D32;
+}
+
+.premium-package .package-icon {
+    background: linear-gradient(135deg, #8BC34A, #66BB6A);
+    color: white;
+}
+
+.enterprise-package .package-icon {
+    background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+    color: #2E7D32;
+}
+
+.package-name {
+    font-size: 1.3rem;
+    color: #2E7D32;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.package-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Package Description */
+.package-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* Package Price */
+.package-price {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f8fcf8, #e8f5e8);
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.price-currency {
+    font-size: 1.2rem;
+    color: #2E7D32;
+    font-weight: 600;
+}
+
+.price-period {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.premium-package .package-price {
+    background: linear-gradient(135deg, #8BC34A, #66BB6A);
+}
+
+.premium-package .price-amount,
+.premium-package .price-currency {
+    color: white;
+}
+
+.premium-package .price-period {
+    color: rgba(255,255,255,0.9);
+}
+
+/* Package Features */
+.package-features {
+    flex-grow: 1;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    font-size: 0.95rem;
+}
+
+.feature-item i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+.feature-item.included i {
+    background-color: #8BC34A;
+    color: white;
+}
+
+.feature-item.excluded i {
+    background-color: #f44336;
+    color: white;
+}
+
+.feature-item.included span {
+    color: #333;
+}
+
+.feature-item.excluded span {
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* Package Additional Info */
+.package-additional {
+    margin-bottom: 25px;
+}
+
+.btn-additional {
+    background: none;
+    border: none;
+    color: #8BC34A;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn-additional:hover {
+    color: #66BB6A;
+    background-color: rgba(139, 195, 74, 0.1);
+    border-radius: 8px;
+}
+
+.btn-additional i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.btn-additional[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.additional-content {
+    padding: 15px;
+    background-color: #f8fcf8;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Package Select Button */
+.btn-package-select {
+    background: linear-gradient(135deg, #8BC34A, #66BB6A);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 195, 74, 0.3);
+}
+
+.btn-package-select:hover {
+    background: linear-gradient(135deg, #66BB6A, #4CAF50);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 195, 74, 0.4);
+    color: white;
+}
+
+.btn-package-select.featured-btn {
+    background: linear-gradient(135deg, #2E7D32, #388E3C);
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+}
+
+.btn-package-select.featured-btn:hover {
+    background: linear-gradient(135deg, #1B5E20, #2E7D32);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+}
+
+/* Basic Package Specific Styles */
+.basic-package {
+    border-left: 4px solid #c8e6c9;
+}
+
+/* Enterprise Package Specific Styles */
+.enterprise-package {
+    border-left: 4px solid #c8e6c9;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .package-card.featured {
+        transform: none;
+        margin-bottom: 30px;
+    }
+    
+    .packages-title {
+        font-size: 2rem;
+    }
+    
+    .package-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .packages-section {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .packages-title {
+        font-size: 1.8rem;
+    }
+    
+    .package-card {
+        padding: 25px;
+    }
+    
+    .package-price {
+        padding: 15px 0;
+    }
+    
+    .price-amount {
+        font-size: 2.5rem;
+    }
+    
+    .feature-item {
+        font-size: 0.9rem;
+    }
+    
+    .btn-package-select {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .package-card {
+        padding: 20px;
+    }
+    
+    .package-description {
+        font-size: 0.9rem;
+    }
+    
+    .price-amount {
+        font-size: 2.2rem;
+    }
+    
+    .feature-item {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+/* ================= إضافات الأنيميشن واللمسات الجمالية ================= */
+
+/* تأثيرات الدخول للعناصر */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
+/* تطبيق الأنيميشن على العناصر */
+.packages-title {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.currency-selector {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.package-card {
+    animation: fadeInScale 0.6s ease-out both;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.package-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.package-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.package-card:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+/* تحسين تأثيرات الـ hover */
+.package-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.package-card.featured:hover {
+    transform: scale(1.08) translateY(-10px);
+    box-shadow: 0 25px 60px rgba(139, 195, 74, 0.3);
+}
+
+/* تأثير النبض للباقة المميزة */
+.package-card.featured {
+    animation: fadeInScale 0.6s ease-out 0.3s both, pulse 2s infinite 2s;
+}
+
+/* تأثير الشيمر للأزرار */
+.btn-package-select {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-package-select::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: shimmer 2s infinite;
+}
+
+.btn-package-select:hover::before {
+    animation: shimmer 0.8s infinite;
+}
+
+/* تأثيرات للأيقونات */
+.package-icon {
+    transition: all 0.3s ease;
+}
+
+.package-card:hover .package-icon {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.featured-badge {
+    animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
+/* تأثيرات للميزات */
+.feature-item {
+    opacity: 0;
+    animation: fadeInUp 0.4s ease-out both;
+}
+
+.feature-item:nth-child(1) { animation-delay: 0.7s; }
+.feature-item:nth-child(2) { animation-delay: 0.8s; }
+.feature-item:nth-child(3) { animation-delay: 0.9s; }
+.feature-item:nth-child(4) { animation-delay: 1.0s; }
+.feature-item:nth-child(5) { animation-delay: 1.1s; }
+.feature-item:nth-child(6) { animation-delay: 1.2s; }
+.feature-item:nth-child(7) { animation-delay: 1.3s; }
+.feature-item:nth-child(8) { animation-delay: 1.4s; }
+.feature-item:nth-child(9) { animation-delay: 1.5s; }
+
+/* تأثير hover للميزات */
+.feature-item:hover {
+    transform: translateX(5px);
+    background-color: rgba(139, 195, 74, 0.05);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 2px 0;
+}
+
+/* تحسين تأثير الأسعار */
+.package-price {
+    transition: all 0.3s ease;
+}
+
+.package-card:hover .package-price {
+    transform: scale(1.05);
+}
+
+/* تأثير للعملة */
+.btn-currency {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-currency:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 195, 74, 0.2);
+}
+
+/* تأثيرات للمعلومات الإضافية */
+.btn-additional {
+    transition: all 0.3s ease;
+}
+
+.btn-additional:hover {
+    transform: translateY(-1px);
+    padding: 8px 15px;
+}
+
+/* تحسين الانتقالات للموبايل */
+@media (max-width: 767.98px) {
+    .package-card {
+        animation-delay: 0s;
+    }
+    
+    .package-card:hover {
+        transform: translateY(-5px) scale(1.01);
+    }
+    
+    .package-card.featured:hover {
+        transform: scale(1.02) translateY(-5px);
+    }
+}
+
+/* تأثير التدرج المتحرك للخلفية */
+.packages-section {
+    background: linear-gradient(-45deg, #f8fcf8, #e8f5e8, #f0f8f0, #f8fcf8);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* تأثير الظل المتحرك للكروت */
+.package-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: linear-gradient(45deg, transparent, rgba(139, 195, 74, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.package-card:hover::after {
+    opacity: 1;
+}
+
+/* تحسين تأثير الباقة المميزة */
+.package-card.featured::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #8BC34A, #66BB6A, #4CAF50, #8BC34A);
+    background-size: 400% 400%;
+    border-radius: 22px;
+    z-index: -1;
+    animation: gradientShift 3s ease infinite;
+}
+
+
+
+/* ================= تحسينات الاستجابة المتقدمة ================= */
+
+/* تحسينات للتابلت */
+@media (max-width: 1199.98px) {
+    .packages-title {
+        font-size: 2.2rem;
+    }
+    
+    .package-card {
+        padding: 28px;
+        margin-bottom: 25px;
+    }
+    
+    .package-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+    }
+    
+    .price-amount {
+        font-size: 2.8rem;
+    }
+}
+
+/* تحسينات للشاشات المتوسطة */
+@media (max-width: 991.98px) {
+    .packages-section {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    
+    .packages-title {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    
+    .currency-selector {
+        margin-bottom: 40px;
+    }
+    
+    .package-card.featured {
+        transform: none;
+        margin-bottom: 30px;
+        border: 3px solid #8BC34A;
+    }
+    
+    .package-card {
+        margin-bottom: 25px;
+        padding: 25px;
+    }
+    
+    .package-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .package-name {
+        font-size: 1.2rem;
+    }
+    
+    .package-subtitle {
+        font-size: 1rem;
+    }
+    
+    .price-amount {
+        font-size: 2.6rem;
+    }
+    
+    .feature-item {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    
+    .btn-package-select {
+        padding: 14px 28px;
+        font-size: 1.05rem;
+    }
+}
+
+/* تحسينات للموبايل الكبير */
+@media (max-width: 767.98px) {
+    .packages-section {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .packages-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .currency-selector {
+        margin-bottom: 35px;
+    }
+    
+    .currency-label {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+    
+    .btn-currency {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .package-card {
+        padding: 22px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+    
+    .package-header {
+        margin-bottom: 18px;
+    }
+    
+    .package-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .package-name {
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+    
+    .package-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .package-description {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    
+    .package-price {
+        padding: 12px 0;
+        margin-bottom: 18px;
+    }
+    
+    .price-amount {
+        font-size: 2.4rem;
+    }
+    
+    .price-currency {
+        font-size: 1.1rem;
+    }
+    
+    .price-period {
+        font-size: 0.9rem;
+    }
+    
+    .feature-item {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+    
+    .feature-item i {
+        width: 18px;
+        height: 18px;
+        font-size: 0.75rem;
+        margin-left: 10px;
+    }
+    
+    .btn-additional {
+        font-size: 0.85rem;
+        padding: 8px 0;
+    }
+    
+    .additional-content {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+    
+    .btn-package-select {
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: 20px;
+    }
+    
+    .featured-badge {
+        top: -8px;
+        right: 15px;
+        padding: 6px 16px;
+        font-size: 0.8rem;
+        border-radius: 15px;
+    }
+}
+
+/* تحسينات للموبايل الصغير */
+@media (max-width: 575.98px) {
+    .packages-title {
+        font-size: 1.6rem;
+        margin-bottom: 18px;
+    }
+    
+    .currency-selector {
+        margin-bottom: 30px;
+    }
+    
+    .btn-currency {
+        padding: 7px 14px;
+        font-size: 0.85rem;
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .package-card {
+        padding: 20px;
+        margin-bottom: 18px;
+        border-radius: 12px;
+    }
+    
+    .package-header {
+        margin-bottom: 15px;
+    }
+    
+    .package-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    
+    .package-name {
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+    
+    .package-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .package-description {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+        line-height: 1.4;
+    }
+    
+    .package-price {
+        padding: 10px 0;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    
+    .price-amount {
+        font-size: 2.2rem;
+    }
+    
+    .price-currency {
+        font-size: 1rem;
+    }
+    
+    .price-period {
+        font-size: 0.85rem;
+    }
+    
+    .feature-item {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+        padding: 2px 0;
+    }
+    
+    .feature-item i {
+        width: 16px;
+        height: 16px;
+        font-size: 0.7rem;
+        margin-left: 8px;
+    }
+    
+    .package-additional {
+        margin-bottom: 20px;
+    }
+    
+    .btn-additional {
+        font-size: 0.8rem;
+        padding: 6px 0;
+    }
+    
+    .additional-content {
+        padding: 10px;
+        font-size: 0.8rem;
+        border-radius: 6px;
+    }
+    
+    .btn-package-select {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+        border-radius: 18px;
+    }
+    
+    .featured-badge {
+        top: -6px;
+        right: 12px;
+        padding: 5px 12px;
+        font-size: 0.75rem;
+        border-radius: 12px;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+    .packages-section {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    
+    .packages-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .currency-label {
+        font-size: 0.8rem;
+    }
+    
+    .package-card {
+        padding: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .package-name {
+        font-size: 0.95rem;
+    }
+    
+    .package-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .package-description {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .price-amount {
+        font-size: 2rem;
+    }
+    
+    .feature-item {
+        font-size: 0.75rem;
+        margin-bottom: 4px;
+    }
+    
+    .btn-package-select {
+        padding: 9px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+/* تحسينات للاتجاه الأفقي على الموبايل */
+@media (max-width: 767.98px) and (orientation: landscape) {
+    .packages-section {
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    
+    .packages-title {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    
+    .currency-selector {
+        margin-bottom: 25px;
+    }
+    
+    .package-card {
+        padding: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .package-price {
+        padding: 8px 0;
+        margin-bottom: 12px;
+    }
+    
+    .price-amount {
+        font-size: 2rem;
+    }
+}
+
+/* تحسين الأنيميشن للأجهزة المحمولة */
+@media (max-width: 767.98px) {
+    .package-card {
+        animation-duration: 0.4s;
+    }
+    
+    .feature-item {
+        animation-duration: 0.3s;
+    }
+    
+    .feature-item:nth-child(n) {
+        animation-delay: 0.1s;
+    }
+    
+    /* تقليل التأثيرات للأداء الأفضل */
+    .packages-section {
+        animation: none;
+        background: #f8fcf8;
+    }
+    
+    .package-card::after,
+    .package-card.featured::before {
+        display: none;
+    }
+}
+
+/* تحسين إمكانية الوصول */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .packages-section {
+        animation: none;
+        background: #f8fcf8;
+    }
+}
+
+/* تحسين للطباعة */
+@media print {
+    .packages-section {
+        background: white !important;
+        animation: none;
+    }
+    
+    .package-card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        animation: none;
+        transform: none !important;
+    }
+    
+    .btn-package-select {
+        background: #8BC34A !important;
+        color: white !important;
+    }
+}
+

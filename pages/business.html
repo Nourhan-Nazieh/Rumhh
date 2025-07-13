@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumh</title>
+    <!-- ___ــــــــLogoـــــــ -->
+    <link rel="icon" href="assets/images/logo..svg" />
+    <!-- Bootstrap CSS -->
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="assets/CSS/all.min.css">
+    <!-- Custom CSS -->
+   <link rel="stylesheet" href="assets/CSS/style.css">
+   <link rel="stylesheet" href="assets/CSS/busines.css">
+
+</head>
+<body>
+    
+<!-- /* =================START Header Section(1)================== */ -->
+
+<header class="header-section">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Ramh Logo" style="height: 40px;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto"> <!-- mx-auto to center nav items -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-store"></i> المتجر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html"><i class="fas fa-dollar-sign"></i> الاسعار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-headset"></i> الدعم الفني</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                   <a href="login.html"><button class="btn btn-login me-2">تسجيل دخول</button></a> 
+                    <button class="btn btn-trial">ابدأ 7 ايام مجانا</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- /* =================START Business Details Section================== */ -->
+<section class="business-details-section py-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-center flex-lg-row-reverse">
+            <!-- Image Column (Left Side) -->
+            <div class="col-lg-6 col-md-10 order-lg-1 order-2">
+                <div class="image-container text-center">
+                    <img src="assets/images/Business.png" alt="Business Illustration" class="img-fluid">
+                </div>
+            </div>
+            <!-- Form Column (Right Side) -->
+            <div class="col-lg-6 col-md-10 mx-auto order-lg-2 order-1 mt-5">
+                <div class="business-details-card p-4 mt-5 p-md-5 shadow-lg rounded-3">
+                    <!-- Progress Bar -->
+                    <div class="progress mb-4" role="progressbar" aria-label="Progress" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 25%"></div>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h2 class="section-title fw-bold text-success">وضح اكثر عن تجارتك يا محمود</h2>
+                        <p class="lead text-muted">اجابتك على الاسئله هتساعدك في بدء تجارتك بالشكل الصحيح</p>
+                    </div>
+                    <form>
+                        <div >
+                            <label class="form-label fw-bold">اختر نوع نشاطك</label>
+                            <div class="form-check-wrapper d-flex  align-items-center mb-3">
+                                <input class="form-check-input" type="radio" name="businessType" id="individual" value="individual">
+                                <label class="form-check-label flex-grow-1" for="individual">
+                                    فرد
+                                </label>
+                            </div>
+                            <div class="form-check-wrapper d-flex  align-items-center mb-3">
+                                <input class="form-check-input" type="radio" name="businessType" id="institution" value="institution">
+                                <label class="form-check-label flex-grow-1 " for="institution">
+                                    مؤسسة
+                                </label>
+                            </div>
+                            <div class="form-check-wrapper d-flex  align-items-center mb-3">
+                                <input class="form-check-input" type="radio" name="businessType" id="company" value="company">
+                                <label class="form-check-label flex-grow-1 " for="company">
+                                    شركة
+                                </label>
+                            </div>
+                            <div class="form-check-wrapper d-flex  align-items-center mb-3">
+                                <input class="form-check-input" type="radio" name="businessType" id="charity" value="charity">
+                                <label class="form-check-label flex-grow-1 " for="charity">
+                                    جمعية خيرية
+                                </label>
+                            </div>
+                        </div>
+                        <a href="businesType.html" class="btn btn-success btn-lg w-100 rounded-pill text-white fw-bold">التالي</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /* =================END Business Details Section================== */ -->
+
+    <!-- Bootstrap-->
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <Script src="assets/JS/script.js"></Script>
+</body>
+</html>
