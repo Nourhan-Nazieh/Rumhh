@@ -281,15 +281,24 @@ body {
 }
 
 .input-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 12px;
-    color: #aaa;
-    font-size: 16px;
-    pointer-events: none;
-    padding: auto;
-  }
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: var(--gray-400); /* لون خفيف */
+  font-size: 1.1rem;
+  z-index: 2;
+transition: color 0.3s ease;
+
+}
+
+.styled-input {
+  padding-right: 2.5rem; /* مساحة داخلية عشان الأيقونة */
+  background-color: var(--gray-100); /* لون خلفية خفيف */
+  border: 1px solid var(--gray-200);
+  color: var(--gray-800);
+}
+
 .form-control:focus + .input-group-text {
     border-color: #10b981;
     background-color: #10b981;

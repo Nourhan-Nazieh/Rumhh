@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rumh</title>
-  <!-- ___ــــــــLogoـــــــ -->
-    <link rel="icon" href="assets/images/logo..svg " />     
+    <title> تسجيل الدخول </title>
+     <!-- ___ــــــــLogoـــــــ -->
+    <link rel="icon" href="../assets/images/logo..svg" />
     <!-- Bootstrap CSS -->
-    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="assets/CSS/all.min.css">
+    <link rel="stylesheet" href="../assets/CSS/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/CSS/style.css">
-    <link rel="stylesheet" href="assets/CSS/login.css">
-
+    <link rel="stylesheet" href="../assets/CSS/contact.css">
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 <body>
 <!-- /* =================START Header Section(1)================== */ -->
@@ -21,8 +20,8 @@
 <header class="header-section">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.png" alt="Ramh Logo" style="height: 40px;" />
+            <a class="navbar-brand" href="index.html">
+          <img src="../assets/images/logo.png" alt="Ramh Logo" style="height: 40px;" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto"> <!-- mx-auto to center nav items -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html"><i class="fas fa-home"></i> الرئيسية</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fas fa-store"></i> المتجر</a>
@@ -39,7 +38,7 @@
                         <a class="nav-link" href="pricing.html"><i class="fas fa-dollar-sign"></i> الاسعار</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-headset"></i> الدعم الفني</a>
+                        <a class="nav-link" href="contact.html"><i class="fas fa-headset"></i> الدعم الفني</a>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -59,28 +58,27 @@
         <div class="col-lg-6 col-md-12 order-lg-1 mb-5 mb-lg-0 pt-3">
           <div class="login-card mx-auto p-4 shadow rounded-4" style="max-width: 400px;">
             <div class="text-center mb-4 ">
-              <img src="assets/images/logo.png" alt="Ramh Logo" class="mb-3" style="height: 40px;">
+              <img src="../assets/images/logo.png" alt="Ramh Logo" class="mb-3" style="height: 40px;">
               <h2 class="login-title">تسجيل الدخول</h2>
             </div>
             <form action="verify.html"  id="login-form">
               <!-- (1) -->
-                <div class="form-group position-relative mb-3">
-                    <input type="email" class="form-control styled-input" placeholder=" ادخل البريد الالكتروني">
-                    <i class="fas fa-user input-icon"></i>
-                  </div>
-                  <!-- (2) -->
-                  <div class="form-group position-relative mb-3">
-                    <input type="password" class="form-control styled-input" placeholder="ادخل كلمة المرو">
+              <div class="form-group has-icon mb-3">
+                <i class="fas fa-user"></i>
+                <input type="email" class="form-control" placeholder="ادخل البريد الالكتروني">
+              </div>
 
-                    <i class="fas fa-lock input-icon"></i>
-                  </div>
-                  
+                  <!-- (2) -->
+                <div class="form-group has-icon mb-3">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" class="form-control" placeholder="ادخل كلمة المرور">
+                </div>
               <div class="text-start mb-3">
                 <a href="resetpass.html" class="text-muted small">هل نسيت كلمة المرور؟</a>
               </div>
               <button type="submit" class="btn btn-success w-100 mb-3">تسجيل الدخول</button>
               <button type="button" class="btn btn-outline-secondary w-100 mb-3">
-                <img src="assets/images/google.svg" class="me-2" style="height: 20px;"> تسجيل عن طريق حساب جوجل
+                <img src="../assets/images/google.svg" class="me-2" style="height: 20px;"> تسجيل عن طريق حساب جوجل
               </button>
               <div class="text-center">
                 <p class="signup-text">ليس لديك حساب؟ <a  href="signup.html" class="text-success fw-bold" class="text-success fw-bold">سجل الآن</a></p>
@@ -92,7 +90,7 @@
         <!-- Image Column (شمال) -->
         <div class="col-lg-6 d-none d-lg-block order-lg-2">
           <div class="text-center">
-            <img src="assets/images/log in.png" alt="Login Illustration" class="img-fluid" style="max-width: 90%;">
+            <img src="../assets/images/log in.png" alt="Login Illustration" class="img-fluid img-fluid store-mockup float-soft" style="max-width: 80%;">
           </div>
         </div>
 
@@ -102,78 +100,80 @@
 
 <!-- /* ================= START Footer Section (7)================== */  -->
   <!-- START Footer Section -->
-  <footer class="footer-section bg-light pt-5 pb-3">
+    <footer class="footer-section bg-light pt-5 pb-3">
     <div class="container">
-      <div class="row justify-content-between align-items-start gy-4">
-  
+        <div class="row justify-content-between align-items-start gy-4">
+        
         <!-- Logo & Description -->
         <div class="col-md-4">
-          <div class="footer-brand mb-3">
+            <div class="footer-brand mb-3">
             <img src="assets/images/logo foot.svg" alt="Ramh Logo" class="footer-logo mb-3">
             <p class="footer-description">
-              رمح بيقدملك مواقع مصممة خصيصًا ليك، سواء لسه بتبدأ مشروعك أو عندك شركة وعايز تطور شكلها أونلاين.
+                رمح بيقدملك مواقع مصممة خصيصًا ليك، سواء لسه بتبدأ مشروعك أو عندك شركة وعايز تطور شكلها أونلاين.
             </p>
-          </div>
+            </div>
         </div>
-  
+
         <!-- About Links -->
         <div class="col-6 col-md-2">
-          <h6 class="footer-title">عن رمح</h6>
-          <ul class="footer-links">
+            <h6 class="footer-title">عن رمح</h6>
+            <ul class="footer-links">
             <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="#">ليه رمح؟</a></li>
-            <li><a href="#">مميزات</a></li>
-            <li><a href="#">أهداف</a></li>
-            <li><a href="#">مشاريع</a></li>
-          </ul>
+            <li><a href="index.html#why-choose">ليه رمح؟</a></li>
+            <li><a href="index.html#features">مميزات</a></li>
+            <li><a href="index.html#goals">أهداف</a></li>
+            <li><a href="index.html#projects">مشاريع</a></li>
+            </ul>
         </div>
-  
+
         <!-- Site Links -->
         <div class="col-6 col-md-2">
-          <h6 class="footer-title">الموقع</h6>
-          <ul class="footer-links">
-            <li><a href="pricing.html">الباقات والأسعار</a></li>
-            <li><a href="#">ثيمات رمح</a></li>
-            <li><a href="#">تواصل معنا</a></li>
-          </ul>
+            <h6 class="footer-title">الموقع</h6>
+            <ul class="footer-links">
+            <li><a href="pages/pricing.html">الباقات والأسعار</a></li>
+            <li><a href="themes.html">ثيمات رمح</a></li>
+            <li><a href="pages/contact.html">تواصل معنا</a></li>
+            </ul>
         </div>
-  
+
         <!-- Newsletter & Social -->
         <div class="col-md-4">
-          <h6 class="footer-title">سجل بريدك واستقبل كل جديد</h6>
-          <form class="newsletter-form mb-3">
+            <h6 class="footer-title">سجل بريدك واستقبل كل جديد</h6>
+            <form class="newsletter-form mb-3">
             <div class="input-group">
-              <input type="email" class="form-control" placeholder="ادخل بريدك الإلكتروني">
+                <input type="email" class="form-control" placeholder="ادخل بريدك الإلكتروني" aria-label="البريد الإلكتروني">
             </div>
-          </form>
-          <div class="social-media">
-            <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+            </form>
+
+            <div class="social-media">
+            <a href="https://facebook.com/ramh" target="_blank" class="social-link facebook" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/966500000000" target="_blank" class="social-link whatsapp" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/ramh" target="_blank" class="social-link instagram" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/ramh" target="_blank" class="social-link linkedin" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
-      </div>
-      
-      <hr>
-  
-      <!-- Bottom Footer -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <p class="copyright">© 2025 جميع الحقوق محفوظة لمنصة رمح</p>
-        <button class="btn-language">
-          <i class="fas fa-globe"></i>
-          <span>العربية</span>
+        </div>
+
+        <hr>
+
+        <!-- Bottom Footer -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="copyright">
+            © 2025 جميع الحقوق محفوظة لمنصة رمح
+        </p>
+        <button class="btn-language" onclick="alert('سيتم دعم اللغة الإنجليزية قريبًا!')">
+            <i class="fas fa-globe"></i>
+            <span>العربية</span>
         </button>
-      </div>
+        </div>
     </div>
-  </footer>
-  
+    </footer>
 <!-- END Footer Section -->
 
 
     <!-- Bootstrap-->
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- JS -->
-    <Script src="assets/JS/script.js"></Script>
+    <Script src="../assets/JS/script.js"></Script>
 </body>
 </html>

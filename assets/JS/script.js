@@ -1,16 +1,29 @@
+// ================== Reset Password Validation ==================
+const form = document.getElementById("resetForm");
 
+if (form) {
+  form.addEventListener("submit", function (e) {
+    const pw1 = document.getElementById("newPassword").value.trim();
+    const pw2 = document.getElementById("confirmPassword").value.trim();
+    const alert = document.getElementById("passwordMismatch");
+    const btn = this.querySelector("button");
 
-// Pass
-document.querySelector("form").addEventListener("submit", function (e) {
-  const newPass = document.getElementById("newPassword").value;
-  const confirmPass = document.getElementById("confirmPassword").value;
-  if (newPass !== confirmPass) {
-    e.preventDefault();
-    alert("كلمة المرور غير متطابقة");
-  }
-});
+    if (pw1 === "" || pw2 === "" || pw1 !== pw2) {
+      e.preventDefault();
+      if (alert) alert.classList.remove("d-none");
+      if (btn) {
+        btn.classList.add("btn-error");
+        setTimeout(() => {
+          btn.classList.remove("btn-error");
+        }, 400);
+      }
+    } else {
+      if (alert) alert.classList.add("d-none");
+    }
+  });
+}
 
-  // ===========Scroll==============
+// ================== Scroll to Top ==================
 window.onload = function () {
   const scrollBtn = document.getElementById("scrollToTopBtn");
 
@@ -32,5 +45,14 @@ window.onload = function () {
   }
 };
 
-//     <!-- START Call to Action Section -->
+// ================== Currency Dropdown ==================
+const currencyOptions = document.querySelectorAll('.dropdown-item');
+const currencyButton = document.getElementById('currencyDropdown');
 
+if (currencyOptions.length > 0 && currencyButton) {
+  currencyOptions.forEach(option => {
+    option.addEventListener('click', function () {
+      currencyButton.innerHTML = `<i class="fas fa-coins me-2"></i> ${this.textContent}`;
+    });
+  });
+}

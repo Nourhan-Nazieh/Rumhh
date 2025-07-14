@@ -1,0 +1,1265 @@
+/* =================START Header Section================== */
+.header-section {
+    background-color: #f8fcf8;
+    padding: 4px 0;
+    box-shadow: 0px 2px 5px rgba(251, 255, 249, 0.468);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background-image: url(../images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0px 2px 5px rgba(215, 255, 194, 0.138);
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #555;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    color: #4CAF50;
+}
+
+.navbar-nav .nav-item .nav-link i {
+    margin-left: 8px;
+}
+
+/* =================START Global Link Style================== */
+a {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* =================START Login & Trial Buttons================== */
+.btn-login {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-login:hover {
+    color: #333;
+}
+
+.btn-trial {
+    background-color: #8BC34A;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(255, 249, 249, 0.468);
+}
+
+.btn-trial:hover {
+    background-color: #7CB342;
+}
+
+/* =================START Hero Section================== */
+.hero-section {
+    padding: 80px 0;
+    background-image: url(../images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 2px 5px rgba(42, 132, 36, 0.293);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: #246527;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 2.5rem;
+    color: #388E3C;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-tagline {
+    font-size: 2rem;
+    color: #388E3C;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.hero-buttons .btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px rgba(177, 158, 38, 0.641);
+}
+
+.hero-buttons .btn-primary {
+    background-color: #8BC34A;
+    border-color: #8BC34A;
+    color: #fff;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #7CB342;
+    border-color: #7CB342;
+}
+
+.hero-buttons .btn-outline-secondary {
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    color: #555;
+}
+
+.hero-buttons .btn-outline-secondary:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #333;
+}
+
+.hero-buttons .btn-outline-secondary i {
+    margin-left: 10px;
+    color: #4CAF50;
+}
+
+.hero-mockup {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* =================START Responsive Adjustments (Header & Hero)================== */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .d-flex .btn {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        max-width: 100%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hero-buttons .btn {
+        width: 90%;
+    }
+
+    .col-lg-6.text-lg-end {
+        text-align: center !important;
+    }
+
+    .hero-mockup {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        margin-top: 60px;
+        padding: 50px 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+}
+
+/* =================START Why Choose Ramh Section================== */
+.why-choose-ramh-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #388E3C;
+    font-weight: bold;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #555555d5;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 5px 15px rgba(39, 174, 64, 0.092);
+}
+
+.feature-card {
+    background-color: #fff;
+    border: 1px solid #8BC34A;
+    border-radius: 20px;
+    padding: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #388E3C;
+    transition: all 0.3s ease;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(177, 158, 38, 0.168);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.feature-card:hover {
+    background-color: #8BC34A;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =================START Start Your Store Section================== */
+.start-store-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #e1eae163;
+}
+
+.store-mockup {
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+/* ========== Animation: Soft Float ========== */
+@keyframes softFloat {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.float-soft {
+    animation: softFloat 3s ease-in-out infinite;
+}
+
+@media (min-width: 992px) {
+    .store-mockup {
+        margin-top: 0;
+    }
+}
+
+.start-store-list {
+    list-style: none;
+    padding: 0;
+}
+
+.start-store-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.start-store-list .list-number {
+    background-color: #8BC34A;
+    color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.start-store-list .list-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* =================START More Than Section================== */
+.more-than-section {
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-shadow: 0 4px 10px rgba(95, 147, 18, 0.056);
+}
+
+.more-than-card {
+    background-color: #c0dab20c;
+    border-radius: 15px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 2px 5px rgba(131, 179, 35, 0.315);
+}
+
+.more-than-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.more-than-card img {
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.more-than-card .card-title {
+    font-size: 1.3rem;
+    color: #388E3C;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 5px rgba(194, 212, 188, 0.125);
+}
+
+.more-than-card .card-text {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* ================= Responsive Adjustments for New Sections ================= */
+@media (max-width: 991.98px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .feature-card {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .start-store-list li {
+        margin-bottom: 20px;
+    }
+
+    .start-store-list .list-number {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    .start-store-list .list-text {
+        font-size: 1rem;
+    }
+
+    .more-than-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .more-than-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .more-than-card .card-title {
+        font-size: 1.2rem;
+    }
+
+    .more-than-card .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+}
+
+/* =================START Pillars Section================== */
+.pillars-section {
+    background-color: #fff;
+    padding: 0px;
+    margin: 60px 0px;
+}
+
+.pillar-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.011);
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    transform: scale(0.99);
+}
+
+.pillar-card .row {
+    width: 100%;
+    height: 100%;
+}
+
+.pillar-card .col-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.pillar-card-title {
+    font-size: 1.5rem;
+    color: #388E3C;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pillar-card-description {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* ========== Custom Switch ========== */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 25px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* ========== Marketing Tools (Card 1) ========== */
+.marketing-tools-content {
+    padding-right: 15px;
+}
+
+.marketing-item {
+    margin-bottom: 15px !important;
+}
+
+.marketing-item:last-child {
+    margin-bottom: 0 !important;
+}
+
+.marketing-text {
+    font-size: 1rem;
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-right: 10px;
+}
+
+.marketing-icon {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.toggle-item.active .marketing-text {
+    color: #388E3C;
+}
+
+.toggle-item.active .marketing-icon {
+    color: #388E3C;
+}
+
+.marketing-info {
+    border-right: 1px solid #eee;
+    padding: 0 20px;
+}
+
+.marketing-info .pillar-card-title {
+    font-size: 1.6rem;
+    color: #388E3C;
+}
+
+.marketing-info .pillar-card-description {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* ========== CTA Section ========== */
+.cta-section {
+    background-color: #8BC34A;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cta-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8;
+    font-family: 'Cairo', sans-serif;
+    color: #222;
+    text-align: right;
+}
+
+.btn-cta {
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #7CB342;
+}
+
+/* ========== Responsive for Pillars & CTA ========== */
+@media (max-width: 991.98px) {
+    .pillar-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .pillar-card .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pillar-card .col-6:first-child {
+        margin-bottom: 20px;
+    }
+
+    .pillar-card .col-6:last-child {
+        margin-top: 20px;
+    }
+
+    .pillar-card-title {
+        font-size: 1.3rem;
+    }
+
+    .pillar-card-description {
+        font-size: 0.9rem;
+    }
+
+    .switch {
+        width: 40px;
+        height: 22px;
+    }
+
+    .slider:before {
+        height: 15px;
+        width: 15px;
+        left: 3px;
+        bottom: 3px;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(18px);
+    }
+
+    .cta-text {
+        font-size: 1.1rem;
+    }
+
+    .btn-cta {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+
+    .marketing-tools-content {
+        padding: 0;
+    }
+
+    .marketing-item {
+        justify-content: center;
+    }
+
+    .marketing-icon {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .marketing-info {
+        border-right: none;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .cta-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .btn-cta {
+        width: 100%;
+    }
+}
+/* ============================================================================================ */
+/* =================START Header Section (1)================== */
+.header-section {
+    background-color: #f8fcf8;
+    padding: 4px 0;
+    box-shadow: 0px 2px 5px rgba(251, 255, 249, 0.468);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background-image: url(../images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0px 2px 5px rgba(215, 255, 194, 0.138);
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #555;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    color: #4CAF50;
+}
+
+.navbar-nav .nav-item .nav-link i {
+    margin-left: 8px;
+}
+
+/* ============ Custom Styling for <a> Links ============ */
+a {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Login Button */
+.btn-login {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-login:hover {
+    color: #333;
+}
+
+/* Trial Button */
+.btn-trial {
+    background-color: #8BC34A;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(255, 249, 249, 0.468);
+}
+
+.btn-trial:hover {
+    background-color: #7CB342;
+}
+
+/* =================START Hero Section (2)================== */
+.hero-section {
+    padding: 80px 0;
+    background-image: url(../images/back.jpg);
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 2px 5px rgba(42, 132, 36, 0.293);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: #246527;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 2.5rem;
+    color: #388E3C;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-tagline {
+    font-size: 2rem;
+    color: #388E3C;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.hero-buttons .btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px rgba(177, 158, 38, 0.641);
+}
+
+.hero-buttons .btn-primary {
+    background-color: #8BC34A;
+    border-color: #8BC34A;
+    color: #fff;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #7CB342;
+    border-color: #7CB342;
+}
+
+.hero-buttons .btn-outline-secondary {
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    color: #555;
+}
+
+.hero-buttons .btn-outline-secondary:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #333;
+}
+
+.hero-buttons .btn-outline-secondary i {
+    margin-left: 10px;
+    color: #4CAF50;
+}
+
+.hero-mockup {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+/* =================START Why Choose Ramh Section (3)================== */
+.why-choose-section {
+    background-color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #388E3C;
+    margin-bottom: 40px;
+}
+
+.feature-card {
+    background-color: #f8fcf8;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+}
+
+.feature-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.feature-card h5 {
+    font-size: 1.3rem;
+    color: #388E3C;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* =================START Start Your Store Section (4)================== */
+.cta-section {
+    background-color: #f8fcf8;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cta-text {
+    font-size: 1.3rem;
+    color: #388E3C;
+    font-weight: bold;
+}
+
+.btn-cta {
+    background-color: #8BC34A;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #7CB342;
+}
+
+.custom-size {
+    width: 90px;
+    height: auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/* =================START All in One Place Section (5)================== */
+.all-in-one-section {
+    background-color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.feature-card-alt {
+    background-color: #f8fcf8;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.3s ease;
+}
+
+.feature-card-alt:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+}
+
+.feature-card-alt img {
+    width: 210px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-card-alt:hover img {
+    transform: translateY(-5px);
+}
+
+.feature-card-alt .card-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .feature-card-alt {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .feature-card-alt img {
+        width: 170px;
+    }
+
+    .feature-card-alt .card-text {
+        font-size: 0.9rem;
+    }
+}
+/* =================START Projects and Testimonials Section (6)================== */
+.projects-testimonials-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    color: #388E3C;
+    font-weight: bold;
+}
+
+.browser-mockup {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+}
+
+.browser-mockup img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.btn-visit-website {
+    background-color: #8BC34A;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn-visit-website:hover {
+    background-color: #7CB342;
+    color: #fff;
+}
+
+/* Testimonials */
+.testimonial-box {
+    background-color: #f8fcf8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.rating-score {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #388E3C;
+}
+
+.total-rating {
+    font-size: 1rem;
+    color: #777;
+    margin-right: 5px;
+}
+
+.testimonial-source {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.testimonial-text-scrollable {
+    max-height: 120px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Carousel Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #8BC34A;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Responsive for Projects & Testimonials */
+@media (max-width: 991.98px) {
+    .project-card {
+        padding: 20px;
+    }
+    .project-title {
+        font-size: 1.5rem;
+    }
+    .btn-visit-website {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .rating-score {
+        font-size: 1.5rem;
+    }
+    .testimonial-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* =================START Download App Section (7)================== */
+.download-app-section {
+    background-color: #f8fcf8;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.phone-mockup {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.phone-mockup img {
+    width: 1000px;
+    height: auto;
+    max-width: 100%;
+}
+
+.coming-soon-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #388E3C;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.app-title {
+    font-size: 2.5rem;
+    color: #388E3C;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.app-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-app-store {
+    background-color: #8BC34A;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 15px auto;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(166, 255, 121, 0.8);
+}
+
+.btn-app-store:hover {
+    background-color: #7CB342;
+    color: #fff;
+}
+
+.btn-app-store i {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+/* Responsive for Download App */
+@media (max-width: 991.98px) {
+    .phone-mockup {
+        margin-bottom: 40px;
+    }
+    .app-title {
+        font-size: 2rem;
+    }
+    .app-description {
+        font-size: 1rem;
+    }
+}
+
+/* =================START Contact Us Section (8)================== */
+.contact-us-section {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 2px 5px rgba(166, 255, 121, 0.611);
+}
+
+.contact-text {
+    font-size: 1.5rem;
+    color: #388E3C;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-contact-us {
+    background-color: #66BB6A;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(166, 255, 121, 0.8);
+}
+
+.btn-contact-us:hover {
+    background-color: #5CB85C;
+    color: #fff;
+}
+
+.contactback {
+    padding: 30px;
+    background-color: #f8fcf8;
+    box-shadow: 0px 2px 5px rgba(166, 255, 121, 0.355);
+}

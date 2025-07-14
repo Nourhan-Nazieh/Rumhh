@@ -15,41 +15,65 @@
 </head>
 <body>
     
-<!-- /* =================START Header Section(1)================== */ -->
+<!-- /* ================= START Header Section (1) ================= */ -->
 
 <header class="header-section">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="Ramh Logo" style="height: 40px;" />
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Ramh Logo" style="height: 40px;" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <i class="fas fa-home"></i> الرئيسية
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto"> <!-- mx-auto to center nav items -->
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-store"></i> المتجر</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pricing.html"><i class="fas fa-dollar-sign"></i> الاسعار</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html"><i class="fas fa-headset"></i> الدعم الفني</a>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                   <a href="login.html"><button class="btn btn-login me-2">تسجيل دخول</button></a> 
-                    <a href="pricing.html"><button class="btn btn-trial">ابدأ 7 ايام مجانا</button></a>
-                </div>
-            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-store"></i> المتجر
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/pricing.html">
+              <i class="fas fa-dollar-sign"></i> الأسعار
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contact.html">
+              <i class="fas fa-headset"></i> الدعم الفني
+            </a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <a href="./pages/login.html">
+            <button class="btn btn-login">تسجيل دخول</button>
+          </a>
+          <a href="./pages/login.html">
+            <button class="btn btn-trial">ابدأ 7 أيام مجاناً</button>
+          </a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </header>
+
 <!-- ــــــــــــــــSTART Hero Sectionـــــــــــــــــــــ -->
+<!-- /* ================= START Hero Section (1) ================= */ -->
 <section class="hero-section">
     <div class="container">
         <div class="row align-items-center">
@@ -74,605 +98,371 @@
                 <!-- Image Column (Left Side in RTL ) -->
                 <div class="col-lg-6 text-center">
                     <img src="assets/images/home.png" alt="UI Mockup Dashboard" class="img-fluid hero-mockup float-up-down">
-
         </div>
     </div>
 </section>
 
-<!-- /* =================START Why Choose Ramh Section(2)============= */ -->
+
+<!-- /* ================= START Why Choose Ramh Section (2) ================= */ -->
 <section class="why-choose-ramh-section py-5">
-    <div class="container">
-        <h2 class="section-title text-center mb-4">ليه تختار رمح؟</h2>
-        <p class="section-description text-center mb-5">
-            لأن السوق ما بينتظر احد ، انت تحتاج تبدأ بسرعة وثقة ، رمح مايعطيك منصة ، يعطيك سلاح تطلق فيه تجارتك
-            <br>
-            الالكترونية ، وتضرب اول ضربة ف السوق بأقوى شكل!
-        </p>
-
-        <div class="row justify-content-center m-5 pt-5">
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="feature-card text-center p-4">
-                    قوالب جاهزة واحترافية
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="feature-card text-center p-4">
-                    دومين وسيرفرات مجانا
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="feature-card text-center p-4">
-                    بوابات دفع وشحن
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="feature-card text-center p-4">
-                    دعم فني سريع
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <h2 class="section-title text-center mb-4"><i class="fas fa-award"></i> ليه تختار رمح؟ </h2>
+    <p class="section-description text-center mb-5">
+      لأن السوق ما بينتظر احد، انت تحتاج تبدأ بسرعة وثقة، رمح مايعطيك منصة، يعطيك سلاح تطلق فيه تجارتك الإلكترونية، وتضرب أول ضربة ف السوق بأقوى شكل!
+    </p>
+    <div class="row justify-content-center m-5 pt-5">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="feature-card text-center p-4">قوالب جاهزة واحترافية</div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="feature-card text-center p-4">دومين وسيرفرات مجانا</div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="feature-card text-center p-4">بوابات دفع وشحن</div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="feature-card text-center p-4">دعم فني سريع</div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- START Start Your Store Section -->
+<!-- /* ================= START Start Your Store Section (3) ================= */ -->
 <section class="start-store-section py-5">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <!-- Content Column (Right Side in RTL) -->
-            <div class="col-lg-6 text-lg-end text-center">
-                <h2 class="section-title mb-4">ابدأ متجرك مع رمح بكل سهولة</h2>
-                <ul class="list-unstyled start-store-list">
-                    <li>
-                        <span class="list-number">1</span>
-                        <span class="list-text">ابدأ رحلتك بثوان عبر تسجيل سريع وسهل</span>
-                    </li>
-                    <li>
-                        <span class="list-number">2</span>
-                        <span class="list-text">اختر من بين قوالب عصرية جاهزة تناسب علامتك التجارية</span>
-                    </li>
-                    <li>
-                        <span class="list-number">3</span>
-                        <span class="list-text">حمل الصور، عدل الأسعار، ونظم الأصناف بسهولة تامة</span>
-                    </li>
-                    <li>
-                        <span class="list-number">4</span>
-                        <span class="list-text">اربط بوابات الدفع، اختر شركة الشحن، واستقبل أول طلب في وقت قياسي</span>
-                    </li>
-                </ul>
-            </div>
-            <!-- Image Column (Left Side in RTL) -->
-            <div class="col-lg-6 text-center">
-                    <img src="assets/images/img1.png" alt="Store Mockup" class="img-fluid store-mockup w-50 float-soft">
-                </div>
-        </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-lg-end text-center">
+        <h2 class="section-title mb-4">ابدأ متجرك مع رمح بكل سهولة</h2>
+        <ul class="list-unstyled start-store-list">
+          <li><span class="list-number">1</span> <span class="list-text">ابدأ رحلتك بثوان عبر تسجيل سريع وسهل</span></li>
+          <li><span class="list-number">2</span> <span class="list-text">اختر من بين قوالب عصرية جاهزة تناسب علامتك التجارية</span></li>
+          <li><span class="list-number">3</span> <span class="list-text">حمل الصور، عدل الأسعار، ونظم الأصناف بسهولة تامة</span></li>
+          <li><span class="list-number">4</span> <span class="list-text">اربط بوابات الدفع، اختر شركة الشحن، واستقبل أول طلب في وقت قياسي</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="assets/images/img1.png" alt="Store Mockup" class="img-fluid store-mockup w-50 float-soft">
+      </div>
     </div>
+  </div>
 </section>
-<!-- START More Than Section -->
+
+<!-- /* ================= START More Than Section (4) ================= */ -->
 <section class="more-than-section py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-         <!-- (1) -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="more-than-card text-center p-4">
-                    <img src="assets/images/Icon1.svg" alt="Payment Icon" class="img-fluid mb-3"> <!-- Replace with your icon -->
-                    <h3 class="card-title">أكثر من 10 وسائل دفع</h3>
-                    <p class="card-text">
-                        اختار وسيلة الدفع اللي تهمك في متجرك
-                        <br>
-                        كاش - فيزا
-                    </p>
-                </div>
-            </div>
-            <!-- (2) -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="more-than-card text-center p-4">
-                    <img src="assets/images/Icon2.svg" alt="Language Icon" class="img-fluid mb-3"> <!-- Replace with your icon -->
-                    <h3 class="card-title">أكثر من 50 لغة</h3>
-                    <p class="card-text">
-                        موقعك بلغات متعددة سريع وآمن
-                        <br>
-                        طوال العام
-                    </p>
-                </div>
-            </div>
-             <!-- (3) -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="more-than-card text-center p-4">
-                    <img src="assets/images/Icon3.svg" alt="Domain Icon" class="img-fluid mb-3"> <!-- Replace with your icon -->
-                    <h3 class="card-title">أكثر من 1000 نطاق</h3>
-                    <p class="card-text">
-                        موقعك بالنطاق الخاص بك آمن
-                        <br>
-                        وسريع على مدار سنة
-                    </p>
-                </div>
-            </div>
-            <!-- (4) -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="more-than-card text-center p-4">
-                    <img src="assets/images/Icon4.svg" alt="Website Icon" class="img-fluid mb-3"> <!-- Replace with your icon -->
-                    <h3 class="card-title">أكثر من 1500 موقع</h3>
-                    <p class="card-text">
-                        انضم إلى فريق رمح الآن مع مجموعة
-                        <br>
-                        واسعة من الشركاء
-                    </p>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="more-than-card text-center p-4">
+          <img src="assets/images/Icon1.svg" alt="Payment Icon" class="img-fluid mb-3">
+          <h3 class="card-title">أكثر من 10 وسائل دفع</h3>
+          <p class="card-text">اختار وسيلة الدفع اللي تهمك في متجرك<br>كاش - فيزا</p>
         </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="more-than-card text-center p-4">
+          <img src="assets/images/Icon2.svg" alt="Language Icon" class="img-fluid mb-3">
+          <h3 class="card-title">أكثر من 50 لغة</h3>
+          <p class="card-text">موقعك بلغات متعددة سريع وآمن<br>طوال العام</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="more-than-card text-center p-4">
+          <img src="assets/images/Icon3.svg" alt="Domain Icon" class="img-fluid mb-3">
+          <h3 class="card-title">أكثر من 1000 نطاق</h3>
+          <p class="card-text">موقعك بالنطاق الخاص بك آمن<br>وسريع على مدار سنة</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="more-than-card text-center p-4">
+          <img src="assets/images/Icon4.svg" alt="Website Icon" class="img-fluid mb-3">
+          <h3 class="card-title">أكثر من 1500 موقع</h3>
+          <p class="card-text">انضم إلى فريق رمح الآن مع مجموعة<br>واسعة من الشركاء</p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
+ <!-- /* ================= START Pillars Section (5) ================= */ -->
+<section class="pillars-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">رمح بيحطك على الطريق بـ 4 ركائز أساسية</h2>
+    <div class="row justify-content-center">
 
-<!-- /* =================START Pillars Section (3)================== */ -->
-    <section class="pillars-section py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">رمح بيحطك على الطريق بـ 4 ركائز أساسية</h2>
-            <div class="row justify-content-center">
-             <!-- Pillar Card 1: Store Design -->
-                <div class="col-lg-7 mb-4 d-flex">
-                    <div class="pillar-card p-4 w-100">
-                        <div class="row align-items-center">
-                            <!-- Right Side Content (Design Options) -->
-                            <div class="col-12">
-                                <img src="assets/images/img2..png" alt="Store Design Mockup" class="img-fluid mb-3">
-                            </div>
-                            <!-- Left Side Content (Store Design Info) -->
-                            <div class="col-12">
-                                <h3 class="pillar-card-title">تصميم المتجر</h3>
-                                <p class="pillar-card-description">موقعك الإلكتروني بتصميم بسيط وأنيق يليق بهويتك ومتناسق على أي جهاز</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pillar Card 2: Marketing Tools -->
-                <div class="col-lg-5 mb-4 d-flex">
-                    <div class="pillar-card p-4 w-100">
-                        <div class="row align-items-center m-auto">
-                            <!-- Right Side Content (Toggles) -->
-                            <div class="col-12 marketing-tools-content pb-4  ">
-                                <!-- (1) -->
-                                <div class="d-flex justify-content-evenly mb-3 toggle-item active"> <!-- Added toggle-item and active class -->
-                                    <i class="fas fa-ticket-alt marketing-icon "><span class="marketing-text p-lg-3">كوبونات الخصم</span></i>
-                                    <label class="switch me-3">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                 
-                                </div>
-                                <!-- (2) -->
-                                <div class="d-flex justify-content-evenly mb-3 toggle-item">
-                                    <i class="fas fa-percent marketing-icon"><span class="marketing-text  p-lg-3">عروض وخصومات</span></i>
-                                    <label class="switch me-3">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>                                  
-                                </div>
-                                <!-- (3) -->
-                                <div class="d-flex justify-content-evenly mb-3 toggle-item">
-                                    <i class="fas fa-percent marketing-icon"><span class="marketing-text  p-lg-3">عروض وخصومات</span></i>
-                                    <label class="switch me-3">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- Left Side Content (Marketing Info) -->
-                            <div class="col-12">
-                                <h3 class="pillar-card-title">أدوات التسويق</h3>
-                                <p class="pillar-card-description">موقعك الإلكتروني بتصميم بسيط وأنيق يليق بهويتك ومتناسق على أي جهاز</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pillar Card 3: Shipping -->
-                <div class="col-lg-5 mb-5 d-flex">
-                    <div class="pillar-card p-4 w-100">
-                        <div class="row align-items-center">
-                            <!-- Right Side Content (Shipping Toggles) -->
-                             <!-- (1) -->
-                            <div class="col-12 shipping-methods-content">
-                                <div class="d-flex justify-content-evenly toggle-item ">
-                                    <img src="assets/images/p1.png" alt="SMSA" class="shipping-logo custom-size">
-                                    <label class="switch me-3">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                                <!-- (2) -->
-                                <div class="d-flex justify-content-evenly toggle-item active">
-                                    <img src="assets/images/p2.png" alt="SPL" class="shipping-logo custom-size">
-                                    <label class="switch me-3">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- Left Side Content (Shipping Info) -->
-                            <div class="col-12">
-                                <h3 class="pillar-card-title">الشحن والتوصيل</h3>
-                                <p class="pillar-card-description">شحن سريع عبر أكثر من شركة توصيل</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pillar Card 4: Payment Methods -->
-                <div class="col-lg-7 mb-5 d-flex">
-                    <div class="pillar-card p-4 w-100">
-                        <div class="row align-items-center">
-                            <!-- Right Side Content (Payment Toggles) -->
-                            <div class="col-12 payment-methods-content">
-                                <div class="d-grid mb-3 toggle-item" style="grid-template-columns: 1fr 1fr 1fr 1fr; align-items: center; gap: 10px;">
-                                    <label class="switch me-3">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <!-- <span class="payment-text">Visa</span> -->
-                                    <span class="payment-amount">80.000 LE</span>
-                                    <span class="payment-date me-auto">28/4/2023</span>
-                                    <img src="assets/images/p3.png" alt="Visa" class="payment-logo me-2">
-                                </div>
-                                <div class="d-grid mb-3 toggle-item" style="grid-template-columns: 1fr 1fr 1fr 1fr; align-items: center; gap: 10px active;">
-                                    <label class="switch me-3">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <span class="payment-amount">80.000 LE</span>
-                                    <span class="payment-date me-auto">28/4/2023</span>
-                                    <!-- <span class="payment-text">MasterCard</span> -->
-                                    <img src="assets/images/p4.png" alt="MasterCard" class="payment-logo me-2">
-                                </div>
-                            </div>
-                            <!-- Left Side Content (Payment Info) -->
-                            <div class="col-12">
-                                <h3 class="pillar-card-title">وسائل الدفع</h3>
-                                <p class="pillar-card-description">اختار طرق الدفع اللي تناسبك كل وسائل الدفع متاحة بسهولة وأمان</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- Pillar 1 -->
+      <div class="col-lg-7 mb-4 d-flex">
+        <div class="pillar-card p-4 w-100">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <img src="assets/images/img2..png" alt="Store Design Mockup" class="img-fluid mb-3 img-fluid store-mockup float-soft">
             </div>
-        </div>
-    </section>
-    <!-- START Call to Action Section -->
-    <section class="cta-section py-4">
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <p class="cta-text mb-md-0">ابدأ متجرك مجانا على رمح، وادخل السوق بخطوات بسيطة</p>
-                </div>
-            <div class="col-md-4">
-                <a href="contact.html" class="btn btn-cta">تواصل معنا</a>
+            <div class="col-12">
+              <h3 class="pillar-card-title">تصميم المتجر</h3>
+              <p class="pillar-card-description">موقعك الإلكتروني بتصميم بسيط وأنيق يليق بهويتك ومتناسق على أي جهاز</p>
             </div>
-            </div>
-        </div>
-    </section>
-
-<!-- /* =================START All in One Place Section (4)================== */ -->
-    <section class="all-in-one-section py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">كل شيء تحتاجه في مكان واحد</h2>
-            <div class="row justify-content-center">
-                <!-- (1) -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="feature-card-alt text-center p-4">
-                        <img src="assets/images/1.png" alt="Man with Laptop" class="img-fluid mb-3">
-                        <p class="card-text">
-                            رمح تدفع متجرك بكبر صح أدوات نمو تحليل
-                            <br>
-                            ذكي، وخطط توسع مصممة لك
-                        </p>
-                    </div>
-                </div>
-                <!-- (2) -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="feature-card-alt text-center p-4">
-                        <img src="assets/images/2.png" alt="Man with Phone" class="img-fluid mb-3">
-                        <p class="card-text">
-                            رمح تعطيك الأدوات، الخطط والدعم اللي
-                            <br>
-                            تحتاجه فريق جاهز وتواصل سهل بكل الطرق
-                        </p>
-                    </div>
-                </div>
-                <!-- (3) -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="feature-card-alt text-center p-4">
-                        <img src="assets/images/3.png" alt="Man Shopping" class="img-fluid mb-3">
-                        <p class="card-text">
-                            رمح تعطيك كل اللي تحتاجه لإدارة تجارتك من
-                            <br>
-                            المحل إلى الموقع والتطبيق
-                        </p>
-                    </div>
-                </div>
-                <!-- (4) -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="feature-card-alt text-center p-4">
-                        <img src="assets/images/4.png" alt="Man with Chart" class="img-fluid mb-3">
-                        <p class="card-text">
-                            رمح نظام من يكبر معك، بدون ما تفتقر أدواتك
-                            <br>
-                            أو تعيد من الصفر
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- /* ================= START Projects and Testimonials Section (5)================== */ -->
-    <section class="projects-testimonials-section py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">مشاريع وتقييمات رمح</h2>
-            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"> <!-- Added data-bs-interval -->
-                <div class="carousel-inner">
-                    <!-- First Carousel Item (contains two project cards) -->
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            <!-- Project Card 1 -->
-                            <div class="col-lg-6 mb-4">
-                                <div class="project-card p-4">
-                                    <h3 class="project-title text-center mb-3">المعجل للتجهيزات</h3>
-                                    <div class="browser-mockup mb-1">
-                                        <img src="assets/images/web2.png" alt="Project 1 Screenshot" class="img-fluid">
-                                    </div>
-                                    <a href="https://almojel-eq.com/" target="_blank" class="btn btn-visit-website d-block text-center mb-1">
-                                        <i class="fas fa-external-link-alt me-2"></i> زيارة الموقع
-                                    </a>
-                                    <div class="testimonial-box p-3">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <span class="rating-score">4.9</span><span class="total-rating">/5.0</span>
-                                            <span class="testimonial-source me-auto">متجر الكترونيات</span>
-                                        </div>
-                                        <div class="testimonial-text-scrollable">
-                                            <p class="testimonial-text">
-                                                تجربتي مع رمح فرضت حلم في بداية مشروعي، التسجيل كان سريع والإعداد أسهل مما توقعت.
-                                                فقد أطلق متجري وأنا أبيع بدون ما أضيع وقت في التفاصيل التقنية. المنصة مرنة والأدوات
-                                                واضحة، وكل شيء بيشتغل مع بعض بإنسيابية. الدعم الفني ساعدني في كل نقطة بداية ورمحهم
-                                                كان سريع وواضح.
-                                            </p>
-                                        </div>
-                                        <div class="text-start">
-                                            <img src="assets/images/web logo.svg" alt="Ramh Logo Small" class="img-fluid" ">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Project Card 2 -->
-                            <div class="col-lg-6 mb-4">
-                                <div class="project-card p-4">
-                                    <h3 class="project-title text-center mb-3">سابورت سورس</h3>
-                                    <div class="browser-mockup mb-1">
-                                        <img src="assets/images/web1.png" alt="Project 2 Screenshot" class="img-fluid">
-                                    </div>
-                                    <a href="https://supportsource.net/ar/" target="_blank" class="btn btn-visit-website d-block text-center mb-1">
-                                        <i class="fas fa-external-link-alt me-2"></i> زيارة الموقع
-                                    </a>
-                                    <div class="testimonial-box p-3">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <span class="rating-score">4.9</span><span class="total-rating">/5.0</span>
-                                            <span class="testimonial-source me-auto">متجر الكترونيات</span>
-                                        </div>
-                                        <div class="testimonial-text-scrollable">
-                                            <p class="testimonial-text">
-                                                تجربتي مع رمح فرضت حلم في بداية مشروعي، التسجيل كان سريع والإعداد أسهل مما توقعت.
-                                                فقد أطلق متجري وأنا أبيع بدون ما أضيع وقت في التفاصيل التقنية. المنصة مرنة والأدوات
-                                                واضحة، وكل شيء بيشتغل مع بعض بإنسيابية. الدعم الفني ساعدني في كل نقطة بداية ورمحهم
-                                                كان سريع وواضح.
-                                            </p>
-                                        </div>
-                                        <div class="text-start">
-                                            <img src="assets/images/web logo.svg" alt="Ramh Logo Small" class="img-fluid" ">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Second Carousel Item (New Projects Test) -->
-                 <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <!-- Project Card 1 -->
-                            <div class="col-lg-6 mb-4">
-                                <div class="project-card p-4">
-                                    <h3 class="project-title text-center mb-3">أفاق السبل </h3>
-                                    <div class="browser-mockup mb-1">
-                                        <img src="assets/images/web3.png" alt="Project 1 Screenshot" class="img-fluid">
-                                    </div>
-                                    <a href="https://spl-pro.com/" target="_blank" class="btn btn-visit-website d-block text-center mb-1">
-                                        <i class="fas fa-external-link-alt me-2"></i> زيارة الموقع
-                                    </a>
-                                    <div class="testimonial-box p-3">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <span class="rating-score">4.9</span><span class="total-rating">/5.0</span>
-                                            <span class="testimonial-source me-auto">متجر الكترونيات</span>
-                                        </div>
-                                        <div class="testimonial-text-scrollable">
-                                            <p class="testimonial-text">
-                                                تجربتي مع رمح فرضت حلم في بداية مشروعي، التسجيل كان سريع والإعداد أسهل مما توقعت.
-                                                فقد أطلق متجري وأنا أبيع بدون ما أضيع وقت في التفاصيل التقنية. المنصة مرنة والأدوات
-                                                واضحة، وكل شيء بيشتغل مع بعض بإنسيابية. الدعم الفني ساعدني في كل نقطة بداية ورمحهم
-                                                كان سريع وواضح.
-                                            </p>
-                                        </div>
-                                        <div class="text-start">
-                                            <img src="assets/images/web logo.svg" alt="Ramh Logo Small" class="img-fluid" ">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Project Card 2 -->
-                            <div class="col-lg-6 mb-4">
-                                <div class="project-card p-4">
-                                    <h3 class="project-title text-center mb-3">قاده</h3>
-                                    <div class="browser-mockup mb-1">
-                                        <img src="assets/images/web4.png" alt="Project 2 Screenshot" class="img-fluid">
-                                    </div>
-                                    <a href="https://qada.agency/" target="_blank" class="btn btn-visit-website d-block text-center mb-1">
-                                        <i class="fas fa-external-link-alt me-2"></i> زيارة الموقع
-                                    </a>
-                                    <div class="testimonial-box p-3">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <span class="rating-score">4.9</span><span class="total-rating">/5.0</span>
-                                            <span class="testimonial-source me-auto">متجر الكترونيات</span>
-                                        </div>
-                                        <div class="testimonial-text-scrollable">
-                                            <p class="testimonial-text">
-                                                تجربتي مع رمح فرضت حلم في بداية مشروعي، التسجيل كان سريع والإعداد أسهل مما توقعت.
-                                                فقد أطلق متجري وأنا أبيع بدون ما أضيع وقت في التفاصيل التقنية. المنصة مرنة والأدوات
-                                                واضحة، وكل شيء بيشتغل مع بعض بإنسيابية. الدعم الفني ساعدني في كل نقطة بداية ورمحهم
-                                                كان سريع وواضح.
-                                            </p>
-                                        </div>
-                                        <div class="text-start">
-                                            <img src="assets/images/web logo.svg" alt="Ramh Logo Small" class="img-fluid" ">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-<!-- /* ================= START Download App Section (6)================== */ -->
-        <section class="download-app-section py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Right Side (Text and Buttons) -->
-                    <div class="col-lg-6 text-lg-end text-center">
-                        <h2 class="app-title">حمل تطبيقنا الآن!</h2>
-                        <p class="app-description">
-                            حمل تطبيق رمح وخلك على اطلاع بكل تفاصيل تجارتك المبيعات، الأرباح والطلبات
-                            <br>
-                            كلها بين يديك وين ما كنت
-                        </p>
-                        <div class="app-buttons">
-                            <a href="https://play.google.com/store/apps?hl=ar" target="_blank" class="btn btn-app-store mb-3">
-                                <i class="fab fa-google-play me-2"></i> تحميل من متجر Google Play
-                            </a>
-                            <a href="https://www.apple.com/eg/app-store/" target="_blank" class="btn btn-app-store">
-                                <i class="fab fa-apple me-2"></i> تحميل من متجر App Store
-                            </a>
-                        </div>
-                    </div>
-                     <!-- Left Side (Phone Mockup) -->
-                    <div class="col-lg-6 text-center">
-                        <div class="phone-mockup">
-                            <img src="assets/images/mob.png" alt="Phone Mockup" class="img-fluid " >
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>    
-        <!-- START Contact Us Section -->
-        <section class="contact-us-section py-5">
-            <div class="container text-center contactback ">
-                <p class="contact-text">في مشكلة مع رمح؟ كلم الدعم واحنا نساعدك فورا</p>
-                <a href="contact.html" class="btn btn-contact-us">تواصل معنا</a>
-            </div>
-        </section>
-    <!-- ========== START Footer Section ================ -->
-
-<footer class="footer-section bg-light pt-5 pb-3">
-    <div class="container">
-      <div class="row justify-content-between align-items-start gy-4">
-  
-        <!-- Logo & Description -->
-        <div class="col-md-4">
-          <div class="footer-brand mb-3">
-            <img src="assets/images/logo foot.svg" alt="Ramh Logo" class="footer-logo mb-3">
-            <p class="footer-description">
-              رمح بيقدملك مواقع مصممة خصيصًا ليك، سواء لسه بتبدأ مشروعك أو عندك شركة وعايز تطور شكلها أونلاين.
-            </p>
           </div>
         </div>
-  
+      </div>
+
+      <!-- Pillar 2 -->
+      <div class="col-lg-5 mb-4 d-flex">
+        <div class="pillar-card p-4 w-100">
+          <div class="row align-items-center m-auto">
+            <div class="col-12 marketing-tools-content pb-4">
+              <div class="d-flex justify-content-evenly mb-3 toggle-item active">
+                <i class="fas fa-ticket-alt marketing-icon"><span class="marketing-text p-lg-3">كوبونات الخصم</span></i>
+                <label class="switch me-3">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="d-flex justify-content-evenly mb-3 toggle-item">
+                <i class="fas fa-percent marketing-icon"><span class="marketing-text p-lg-3">عروض وخصومات</span></i>
+                <label class="switch me-3">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <h3 class="pillar-card-title">أدوات التسويق</h3>
+              <p class="pillar-card-description">أطلق حملاتك التسويقية بكبسة زر وراقب النتائج لحظة بلحظة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 3 -->
+      <div class="col-lg-5 mb-5 d-flex">
+        <div class="pillar-card p-4 w-100">
+          <div class="row align-items-center">
+            <div class="col-12 shipping-methods-content">
+              <div class="d-flex justify-content-evenly toggle-item">
+                <img src="assets/images/p1.png" alt="SMSA" class="shipping-logo custom-size">
+                <label class="switch me-3">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="d-flex justify-content-evenly toggle-item active">
+                <img src="assets/images/p2.png" alt="SPL" class="shipping-logo custom-size">
+                <label class="switch me-3">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <h3 class="pillar-card-title">الشحن والتوصيل</h3>
+              <p class="pillar-card-description">شحن سريع عبر أكثر من شركة توصيل</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 4 -->
+      <div class="col-lg-7 mb-5 d-flex">
+        <div class="pillar-card p-4 w-100">
+          <div class="row align-items-center">
+            <div class="col-12 payment-methods-content">
+              <div class="d-grid mb-3 toggle-item" style="grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px;">
+                <label class="switch me-3">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+                <span class="payment-amount">80.000 LE</span>
+                <span class="payment-date me-auto">28/4/2023</span>
+                <img src="assets/images/p3.png" alt="Visa" class="payment-logo me-2">
+              </div>
+              <div class="d-grid mb-3 toggle-item active" style="grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px;">
+                <label class="switch me-3">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+                <span class="payment-amount">80.000 LE</span>
+                <span class="payment-date me-auto">28/4/2023</span>
+                <img src="assets/images/p4.png" alt="MasterCard" class="payment-logo me-2">
+              </div>
+            </div>
+            <div class="col-12">
+              <h3 class="pillar-card-title">وسائل الدفع</h3>
+              <p class="pillar-card-description">اختار طرق الدفع اللي تناسبك كل وسائل الدفع متاحة بسهولة وأمان</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- /* ================= START Call to Action Section (6) ================= */ -->
+<section class="cta-section py-4">
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <p class="cta-text mb-md-0">ابدأ متجرك مجانا على رمح، وادخل السوق بخطوات بسيطة</p>
+      </div>
+      <div class="col-md-4">
+        <a href="./pages/contact.html" class="btn btn-cta">تواصل معنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- /* ================= START All in One Place Section (7) ================= */ -->
+<section class="all-in-one-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">كل شيء تحتاجه في مكان واحد</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="feature-card-alt text-center p-4">
+          <img src="assets/images/1.png" alt="Man with Laptop" class="img-fluid mb-3 float-soft">
+          <p class="card-text">رمح تدفع متجرك بكبر صح أدوات نمو تحليل ذكي، وخطط توسع مصممة لك</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="feature-card-alt text-center p-4">
+          <img src="assets/images/2.png" alt="Man with Phone" class="img-fluid mb-3 float-soft">
+          <p class="card-text">رمح تعطيك الأدوات، الخطط والدعم اللي تحتاجه فريق جاهز وتواصل سهل بكل الطرق</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="feature-card-alt text-center p-4">
+          <img src="assets/images/3.png" alt="Man Shopping" class="img-fluid mb-3 float-soft">
+          <p class="card-text">رمح تعطيك كل اللي تحتاجه لإدارة تجارتك من المحل إلى الموقع والتطبيق</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="feature-card-alt text-center p-4">
+          <img src="assets/images/4.png" alt="Man with Chart" class="img-fluid mb-3 float-soft">
+          <p class="card-text">رمح نظام من يكبر معك، بدون ما تفتقر أدواتك أو تعيد من الصفر</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- /* ================= START Download App Section (8) ================= */ -->
+<section class="download-app-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-lg-end text-center">
+        <h2 class="app-title">حمل تطبيقنا الآن!</h2>
+        <p class="app-description">حمل تطبيق رمح وخلك على اطلاع بكل تفاصيل تجارتك، المبيعات، الأرباح والطلبات كلها بين يديك وين ما كنت</p>
+        <div class="app-buttons">
+          <a href="https://play.google.com/store/apps?hl=ar" target="_blank" class="btn btn-app-store mb-3">
+            <i class="fab fa-google-play me-2"></i> تحميل من متجر Google 
+          </a>
+          <a href="https://www.apple.com/eg/app-store/" target="_blank" class="btn btn-app-store">
+            <i class="fab fa-apple me-2"></i> تحميل من متجر App Store
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="phone-mockup">
+          <img src="assets/images/mob.png" alt="Phone Mockup" class="img-fluid store-mockup float-soft">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- /* ================= START Contact Us Section (9) ================= */ -->
+ <section class="contact-us-section py-5">
+  <div class="container text-center contactback">
+    <p class="contact-text">في مشكلة مع رمح؟ كلم الدعم واحنا نساعدك فورا</p>
+    <a href="./pages/contact.html" class="btn btn-contact-us">تواصل معنا</a>
+  </div>
+ </section>
+
+
+
+<!-- /* ================= START Footer Section (X) ================= */ -->
+    <footer class="footer-section bg-light pt-5 pb-3">
+    <div class="container">
+        <div class="row justify-content-between align-items-start gy-4">
+        
+        <!-- Logo & Description -->
+        <div class="col-md-4">
+            <div class="footer-brand mb-3">
+            <img src="assets/images/logo foot.svg" alt="Ramh Logo" class="footer-logo mb-3">
+            <p class="footer-description">
+                رمح بيقدملك مواقع مصممة خصيصًا ليك، سواء لسه بتبدأ مشروعك أو عندك شركة وعايز تطور شكلها أونلاين.
+            </p>
+            </div>
+        </div>
+
         <!-- About Links -->
         <div class="col-6 col-md-2">
-          <h6 class="footer-title">عن رمح</h6>
-          <ul class="footer-links">
+            <h6 class="footer-title">عن رمح</h6>
+            <ul class="footer-links">
             <li><a href="index.html">الرئيسية</a></li>
             <li><a href="index.html#why-choose">ليه رمح؟</a></li>
             <li><a href="index.html#features">مميزات</a></li>
             <li><a href="index.html#goals">أهداف</a></li>
             <li><a href="index.html#projects">مشاريع</a></li>
-          </ul>
+            </ul>
         </div>
-  
+
         <!-- Site Links -->
         <div class="col-6 col-md-2">
-          <h6 class="footer-title">الموقع</h6>
-          <ul class="footer-links">
-            <li><a href="pricing.html">الباقات والأسعار</a></li>
+            <h6 class="footer-title">الموقع</h6>
+            <ul class="footer-links">
+            <li><a href="pages/pricing.html">الباقات والأسعار</a></li>
             <li><a href="themes.html">ثيمات رمح</a></li>
-            <li><a href="contact.html">تواصل معنا</a></li>
-          </ul>
+            <li><a href="pages/contact.html">تواصل معنا</a></li>
+            </ul>
         </div>
-  
+
         <!-- Newsletter & Social -->
         <div class="col-md-4">
-          <h6 class="footer-title">سجل بريدك واستقبل كل جديد</h6>
-        <form class="newsletter-form mb-3">
+            <h6 class="footer-title">سجل بريدك واستقبل كل جديد</h6>
+            <form class="newsletter-form mb-3">
             <div class="input-group">
-                <input type="email" class="form-control" placeholder="ادخل بريدك الإلكتروني">
+                <input type="email" class="form-control" placeholder="ادخل بريدك الإلكتروني" aria-label="البريد الإلكتروني">
             </div>
-        </form>
+            </form>
 
-        
-
-          <div class="social-media">
-            <a href="https://facebook.com/ramh" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/966500000000" target="_blank" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://instagram.com/ramh" target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com/company/ramh" target="_blank" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+            <div class="social-media">
+            <a href="https://facebook.com/ramh" target="_blank" class="social-link facebook" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/966500000000" target="_blank" class="social-link whatsapp" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/ramh" target="_blank" class="social-link instagram" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/ramh" target="_blank" class="social-link linkedin" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
-      </div>
-      
-      <hr>
-  
-      <!-- Bottom Footer -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <p class="copyright">© 2025 جميع الحقوق محفوظة لمنصة رمح</p>
+        </div>
+
+        <hr>
+
+        <!-- Bottom Footer -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="copyright">
+            © 2025 جميع الحقوق محفوظة لمنصة رمح
+        </p>
         <button class="btn-language" onclick="alert('سيتم دعم اللغة الإنجليزية قريبًا!')">
             <i class="fas fa-globe"></i>
             <span>العربية</span>
         </button>
-
-      </div>
+        </div>
     </div>
-  </footer>
-<!-- END Footer Section -->
- <!-- Scroll To Top Button -->
+    </footer>
 
+
+
+ <!--======= Scroll To Top Button========== -->
 <button id="scrollToTopBtn" class="scroll-to-top" title="الرجوع للأعلى">
 <i class="fa-brands fa-gripfire fa-fade fa-xl" style="color: #fffefa;"></i>
 </button>
-
-
 
   
     <!-- Bootstrap-->
      <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>  
     <!-- JS -->
      <script src="assets/JS/script.js"></script>
-     <!-- في آخر الـ body -->
-
 </body>
 
 </html>

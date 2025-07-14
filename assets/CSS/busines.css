@@ -23,22 +23,23 @@ body {
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
-    animation: float 3s ease-in-out infinite;
+    animation: floatUpDown 3s ease-in-out infinite;
+    max-width: 80%;
 }
 
-@keyframes float {
-    0% { transform: translateY(0px); }
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
 }
+
 
 .business-details-card {
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 40px;
+    background-color: #4b775c11;
+
 }
 
 .progress {
@@ -131,10 +132,10 @@ body {
     /* Ensure image is visible on smaller screens */
     .col-lg-6.order-lg-1 {
         display: block !important;
-        order: 2 !important; /* Image column comes after form on small screens */
+        order: 2 !important; 
     }
     .col-lg-6.order-lg-2 {
-        order: 1 !important; /* Form column comes before image on small screens */
+        order: 1 !important;
     }
 }
 
