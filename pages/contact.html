@@ -17,41 +17,61 @@
 </head>
 <body>
     
-    <!-- ============================================
-         Start Header
-    ============================================ -->
-<header class="header-section">
+   <!-- /* ================= START Header Section (1) ================= */ -->
+  <header class="header-section">
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
           <img src="../assets/images/logo.png" alt="Ramh Logo" style="height: 40px;" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">
+                <i class="fas fa-home"></i> الرئيسية
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-store"></i> المتجر
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/pricing.html">
+                <i class="fas fa-dollar-sign"></i> الأسعار
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contact.html">
+                <i class="fas fa-headset"></i> الدعم الفني
+              </a>
+            </li>
+          </ul>
+
+          <div class="d-flex gap-2">
+            <a href="../pages/login.html">
+              <button class="btn btn-login">تسجيل دخول</button>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto"> <!-- mx-auto to center nav items -->
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html"><i class="fas fa-home"></i> الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-store"></i> المتجر</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pricing.html"><i class="fas fa-dollar-sign"></i> الاسعار</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html"><i class="fas fa-headset"></i> الدعم الفني</a>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                   <a href="login.html"><button class="btn btn-login me-2">تسجيل دخول</button></a> 
-                    <button class="btn btn-trial">ابدأ 7 ايام مجانا</button>
-                </div>
-            </div>
+            <a href="../pages/login.html">
+              <button class="btn btn-trial">ابدأ 7 أيام مجاناً</button>
+            </a>
+          </div>
         </div>
+      </div>
     </nav>
-</header>
+  </header>
 
     <!-- ============================================
          Main Contact Us
@@ -98,7 +118,7 @@
     </div>
 </section>
 
-    <!-- ========== START Footer Section ================ -->
+<!-- /* ================= START Footer Section (11) ================= */ -->
     <footer class="footer-section bg-light pt-5 pb-3">
     <div class="container">
         <div class="row justify-content-between align-items-start gy-4">
@@ -106,7 +126,7 @@
         <!-- Logo & Description -->
         <div class="col-md-4">
             <div class="footer-brand mb-3">
-            <img src="../assets/images/logo foot.svg" alt="Ramh Logo" class="footer-logo mb-3">
+            <img src="assets/images/logo foot.svg" alt="Ramh Logo" class="footer-logo mb-3">
             <p class="footer-description">
                 رمح بيقدملك مواقع مصممة خصيصًا ليك، سواء لسه بتبدأ مشروعك أو عندك شركة وعايز تطور شكلها أونلاين.
             </p>
@@ -130,7 +150,7 @@
             <h6 class="footer-title">الموقع</h6>
             <ul class="footer-links">
             <li><a href="pages/pricing.html">الباقات والأسعار</a></li>
-            <li><a href="themes.html">ثيمات رمح</a></li>
+            <li><a href="#" onclick="alert('قريباً سيتم عرض الثيمات!')">ثيمات رمح</a></li>
             <li><a href="pages/contact.html">تواصل معنا</a></li>
             </ul>
         </div>
@@ -167,7 +187,6 @@
         </div>
     </div>
     </footer>
-<!-- END Footer Section -->
 
     <!-- ============== مكتبات JavaScript ============== -->
     <!-- Bootstrap JavaScript -->

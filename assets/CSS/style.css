@@ -1,4 +1,6 @@
-
+ html {
+      scroll-behavior: smooth;
+    }
 
 /* START Header Section */
 .header-section {
