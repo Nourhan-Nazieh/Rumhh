@@ -295,7 +295,6 @@ a{
     color: #fff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-/* END Why Choose Ramh Section */
 
 /* START Start Your Store Section */
 .start-store-section {
@@ -307,6 +306,10 @@ background-color: #e1eae163;}
     max-width: 100%;
     height: auto;
 }
+
+
+
+
 
 /* =======انيميشن علوي======= */
 @keyframes softFloat {
@@ -326,6 +329,14 @@ background-color: #e1eae163;}
     .store-mockup {
         margin-top: 0;
     }
+}
+
+@media (max-width: 991.98px){
+
+    .store-mockup {
+    max-width: 300px;
+    height: auto;
+}
 }
 
 .start-store-list {
@@ -1047,7 +1058,7 @@ input:checked + .slider:before {
 
 .phone-mockup img {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -1122,6 +1133,12 @@ input:checked + .slider:before {
     .app-description {
         font-size: 1rem;
     }
+
+    .phone-mockup img {
+    width: 100%;
+    max-width: 200px;
+}
+
 }
 
 /* START Contact Us Section */
