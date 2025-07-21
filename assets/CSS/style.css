@@ -1,6 +1,18 @@
  html {
       scroll-behavior: smooth;
+          margin-left: 0 !important;
+        margin-right: 0 !important;
     }
+
+
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 
 /* START Header Section */
 .header-section {
@@ -2108,8 +2120,8 @@ body.loaded::after {
 /* Small screens (576px to 767px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .hero-section {
-        /* padding: 60px 0; */
-        /* margin-top: 70px; */
+        padding: 60px 0;
+        margin-top: 70px;
     }
     
     .hero-title {
