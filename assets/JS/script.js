@@ -56,3 +56,17 @@ if (currencyOptions.length > 0 && currencyButton) {
     });
   });
 }
+// ====================AOS==========================
+  AOS.init({
+    once: true,
+    duration: 1000,
+  });
+
+
+  // ---------
+    VanillaTilt.init(document.querySelectorAll(".interactive-img"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
+  });

@@ -7,7 +7,6 @@
     background-color: #f8fcf8;
     padding: 4px 0;
     box-shadow: 0px 2px 5px rgba(251, 255, 249, 0.468);
-    /* background-color: #dfecdf; Light green background from the image */
     position: fixed;
     top: 0;
     left: 0;
@@ -82,7 +81,7 @@ a{
 
 /* ===========START Hero Section============= */
 .hero-section {
-    padding: 80px 0;
+    padding: 40px 0;
     background-image: url(../images/back.jpg);
     align-items: center;
     background-size: cover;
@@ -235,6 +234,9 @@ a{
 .why-choose-ramh-section {
     padding-top: 80px;
     padding-bottom: 80px;
+    width: 100%;
+    margin: 120px 0;
+    
 
 }
 
@@ -252,9 +254,9 @@ a{
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    font-weight:400;
+    font-weight:500;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 5px 15px rgba(39, 174, 64, 0.092);
+    /* text-shadow: 0 5px 5px rgba(161, 213, 19, 0.726); */
 
 }
 
@@ -273,6 +275,7 @@ a{
     justify-content: center;
     box-shadow: 0px 2px 5px rgba(177, 158, 38, 0.168);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
 }
 
@@ -292,7 +295,6 @@ background-color: #e1eae163;}
 .store-mockup {
     max-width: 100%;
     height: auto;
-    margin-top: 40px;
 }
 
 /* =======انيميشن علوي======= */
@@ -303,7 +305,7 @@ background-color: #e1eae163;}
 }
 
 .float-soft {
-  animation: softFloat 3s ease-in-out infinite;
+  animation: softFloat 2s ease-in-out infinite;
 }
 
 /* ------------ */
@@ -352,12 +354,13 @@ background-color: #e1eae163;}
     background-color: white;
     padding-top: 80px;
     padding-bottom: 80px;
-        box-shadow: 0 4px 10px rgba(95, 147, 18, 0.056);
+    /* box-shadow: 0 4px 10px rgba(95, 147, 18, 0.056); */
+    margin-top: 100px !important;
 
 }
 
 .more-than-card {
-    background-color: #c0dab20c;
+    background-color: #c0dab2;
     border-radius: 15px;
     padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -388,6 +391,7 @@ background-color: #e1eae163;}
     margin-top: 15px;
     margin-bottom: 10px;
     text-shadow: 0px 2px 5px rgba(194, 212, 188, 0.125);
+
 }
 
 .more-than-card .card-text {
@@ -452,6 +456,8 @@ background-color: #e1eae163;}
     background-color: #fff;
     padding: 0px;
     margin: 60px 0px;  
+    box-shadow: 0 4px 10px rgba(95, 147, 18, 0.056);
+    background-color: #f8fcf8;
   
 }
 
@@ -623,7 +629,8 @@ input:checked + .slider:before {
 
 /* Payment and Shipping Logos */
 .payment-logo, .shipping-logo {
-    height: 30px;
+    width: 80%;
+    /* height: 20px; */
     object-fit: contain;
 }
 
@@ -635,9 +642,11 @@ input:checked + .slider:before {
 /* Call to Action Section */
 .cta-section {
     background-color: #f8fcf8;
-    padding-top: 40px;
-    padding-bottom: 40px;
-        background-color: #8BC34A;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    background-color: #30421d !important;
 
 }
 
@@ -739,9 +748,7 @@ input:checked + .slider:before {
         -ms-transform: translateX(18px);
         transform: translateX(18px);
     }
-    .payment-logo, .shipping-logo {
-        height: 25px;
-    }
+
     .cta-text {
         font-size: 1.1rem;
     }
@@ -808,10 +815,10 @@ input:checked + .slider:before {
     background-color: #7CB342;
 }
 .custom-size{
-    width: 90px; 
+    width: 80px; 
     height: auto; 
     padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     
 }
 
@@ -874,6 +881,7 @@ input:checked + .slider:before {
 .projects-testimonials-section {
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-top: 50px;
 }
 
 .project-card {
@@ -1799,7 +1807,7 @@ body.loaded::after {
 }
 
 .float-up-down {
-  animation: floatUpDown 3s ease-in-out infinite;
+  animation: floatUpDown 2s ease-in-out infinite;
 }
 
 
@@ -1946,11 +1954,6 @@ body.loaded::after {
 }
 
 /* Glowing effect for important elements */
-.btn-primary,
-.btn-cta {
-    box-shadow: 0 0 20px rgba(139, 195, 74, 0.3);
-    animation: glow-pulse 2s ease-in-out infinite alternate;
-}
 
 @keyframes glow-pulse {
     from {
@@ -2105,8 +2108,8 @@ body.loaded::after {
 /* Small screens (576px to 767px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .hero-section {
-        padding: 60px 0;
-        margin-top: 70px;
+        /* padding: 60px 0; */
+        /* margin-top: 70px; */
     }
     
     .hero-title {
@@ -2402,9 +2405,7 @@ body.loaded::after {
         transform: translateX(15px);
     }
     
-    .payment-logo, .shipping-logo {
-        height: 22px;
-    }
+   
     
     .custom-size {
         width: 70px;
@@ -3808,3 +3809,83 @@ body.loaded::after {
     }
 }
 
+/* ---------Scroll----------- */
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #397524 #DFE9EB;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #397524;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #62A34B;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #62A34B;
+}
+
+
+/* ----------------------- */
+/* تأثير تفاعلي على الصور */
+.interactive-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+}
+
+.interactive-img:hover {
+  transform: scale(1.05) rotateZ(1deg);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* ------------------- */
+.responsive-lottie {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  animation: float-slow 30s ease-in-out infinite;
+  margin: auto;
+  display: block;
+}
+
+.element.style{
+    padding: 0;
+    margin: 0;
+}
+
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}

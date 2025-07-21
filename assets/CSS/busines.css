@@ -23,7 +23,7 @@ body {
 }
 
 .image-container img {
-    animation: floatUpDown 3s ease-in-out infinite;
+    animation: floatUpDown 2s ease-in-out infinite;
     max-width: 80%;
 }
 

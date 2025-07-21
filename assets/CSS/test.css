@@ -299,7 +299,7 @@ a {
 }
 
 .float-soft {
-    animation: softFloat 3s ease-in-out infinite;
+    animation: softFloat 2s ease-in-out infinite;
 }
 
 @media (min-width: 992px) {
