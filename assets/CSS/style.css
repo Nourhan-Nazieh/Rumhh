@@ -7,7 +7,7 @@
   box-sizing: border-box !important;
 }
 
-body {
+html, body {
   overflow-x: hidden !important;
 }
 
