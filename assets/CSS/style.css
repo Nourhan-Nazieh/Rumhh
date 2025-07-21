@@ -316,7 +316,8 @@ background-color: #e1eae163;}
 }
 
 .float-soft {
-  animation: softFloat 2s ease-in-out infinite;
+  animation: softFloat 2s ease-in-out infinite; 
+  
 }
 
 /* ------------ */
@@ -834,8 +835,7 @@ input:checked + .slider:before {
     
 }
 
-/* <!-- =================START All in One Place Section (4)================== --> */
-/* START All in One Place Section */
+/* <!-- =================START All in One Place Section (7)================== --> */
 .all-in-one-section {
     background-color: #fff;
     padding-top: 80px;
@@ -859,12 +859,20 @@ input:checked + .slider:before {
     background-color: #f8f9fa; 
   }
 
+
 .feature-card-alt img {
-    width: 210px; 
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+  display: block;
+  overflow-x: hidden;
+
 }
+
+
+
 .feature-card-alt:hover img {
     transform: translateY(-5px);
   }
@@ -889,7 +897,7 @@ input:checked + .slider:before {
         font-size: 0.9rem;
     }
 }
-/* <!-- =================START Projects and Testimonials Section (5)================== --> */
+/* <!-- =================START Projects and Testimonials Section (8)================== --> */
 .projects-testimonials-section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -1023,8 +1031,7 @@ input:checked + .slider:before {
         font-size: 0.85rem;
     }
 }
-/* <!-- ================= START Download App Section (6)================== --> */
-/* START Download App Section */
+/* <!-- ================= START Download App Section (9)================== --> */
 .download-app-section {
     background-color: #f8fcf8;
     padding-top: 80px;
@@ -1039,10 +1046,14 @@ input:checked + .slider:before {
 }
 
 .phone-mockup img {
-    width: 1000px ;
+    width: 100%;
+    max-width: 350px;
     height: auto;
-    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
+
+
 
 .coming-soon-text {
     position: absolute;
@@ -1091,6 +1102,8 @@ input:checked + .slider:before {
 .btn-app-store:hover {
     background-color: #7CB342;
     color: #fff;
+    transform: translateY(-3px);
+
 }
 
 .btn-app-store i {
@@ -1153,7 +1166,7 @@ input:checked + .slider:before {
 }
 
 
-/* <!-- ================= START Footer Section (7)================== --> */
+/* <!-- ================= START Footer Section (10)================== --> */
 /* START Footer Section */
 .footer-section {
     background: linear-gradient(135deg, #f8fcf8 0%, #e8f5e8 100%);
@@ -1161,6 +1174,8 @@ input:checked + .slider:before {
     color: #555;
     position: relative;
     overflow: hidden;
+    border-top: 2px solid #8BC34A;
+
 }
 
 .footer-section::before {
@@ -3823,10 +3838,6 @@ body.loaded::after {
 
 /* ---------Scroll----------- */
 /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
-/** {
-  scrollbar-width: thin;
-  scrollbar-color: #397524 #DFE9EB;
-}*/
 
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
