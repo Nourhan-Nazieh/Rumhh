@@ -6,12 +6,20 @@
     <title>Rumh</title>
     <!-- ___ــــــــLogoـــــــ -->
 <link rel="icon" href="assets/images/logo..svg"/>
+
+
     <!-- Bootstrap CSS -->
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="assets/CSS/all.min.css">
     <!-- AOS Animation Library -->
      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts - Almarai -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
@@ -75,7 +83,7 @@
 <!-- /* ================= START Hero Section (1) ================= */ -->
 <section class="hero-section" id="hero">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center m-0 p-0 m-lg-0">
         
             <!-- Content Column (Right Side in RTL) -->
             <div class="col-lg-6 text-lg-end text-center"> <!-- text-lg-end for right alignment on large screens, text-center for small -->
@@ -95,16 +103,20 @@
                 </div>
             </div>
             <!-- Image Column (Left Side in RTL ) -->
-             <div class="col-lg-6 text-center">
-              <!-- <img src="assets/images/home.png" alt="UI Mockup Dashboard" class="img-fluid hero-mockup float-up-down"> -->
-              <iframe 
-                src="https://lottie.host/embed/66996c7d-c04a-490a-a602-7115148f43f4/4Ehsu1CPlv.lottie" 
-                class="hero-animation responsive-lottie"
-                allowfullscreen>
-              </iframe>
+            <div class="col-lg-6 text-center">
+              <div class="lottie-wrapper">
+                <dotlottie-wc
+                  src="https://lottie.host/f91d735f-0b17-4f0a-a00d-f450a9e48112/HSrba9VF2G.lottie"
+                  class="responsive-lottie"
+                  speed="0.5"
+                  autoplay
+                  loop>
+                </dotlottie-wc>
               </div>
+            </div>
+            
                 </div>
-</section>
+              </section>
 
 <!-- /* ================= START Why Choose Ramh Section (2) ================= */ -->
 <section class="why-choose-ramh-section py-5" id="why-choose">
@@ -181,8 +193,8 @@
       </div>
 
       <!-- الصورة -->
-      <div class="col-lg-6 text-center" data-aos="fade-right">
-        <img src="assets/images/img1.png" alt="Store Mockup" class="img-fluid store-mockup w-75 float-soft">
+      <div class="col-lg-6 text-center form-sidebar" data-aos="fade-right" id="form-sidebar">
+        <iframe src="https://lottie.host/embed/d632c848-e216-4489-a4b0-2adf859d874f/tXJDKPOIYf.lottie"  alt="Store Mockup" class="animationStart img-fluid store-mockup w-100 float-soft"></iframe>
       </div>
 
     </div>
@@ -248,9 +260,15 @@
       <div class="col-lg-7 mb-4 d-flex">
         <div class="pillar-card p-4 w-100">
           <div class="row align-items-center">
-            <div class="col-12">
-              <img src="assets/images/img2..png" alt="Store Design Mockup" class="img-fluid mb-3 img-fluid store-mockup float-soft">
-            </div>
+            <!-- im -->
+            <dotlottie-wc 
+            src="https://lottie.host/b9a35eae-8d88-4c4a-85f2-5cdd4686b7bd/VDwMYPtaf4.lottie"
+            class="responsive-lottie-web"
+            speed="0.75"
+            autoplay 
+            loop>
+          </dotlottie-wc>
+          
             <div class="col-12">
               <h3 class="pillar-card-title">تصميم المتجر</h3>
               <p class="pillar-card-description">موقعك الإلكتروني بتصميم بسيط وأنيق يليق بهويتك ومتناسق على أي جهاز</p>
@@ -259,33 +277,51 @@
         </div>
       </div>
 
-      <!-- Pillar 2 -->
-      <div class="col-lg-5 mb-4 d-flex">
-        <div class="pillar-card p-4 w-100">
-          <div class="row align-items-center m-auto">
-            <div class="col-12 marketing-tools-content pb-4">
-              <div class="d-flex justify-content-evenly mb-3 toggle-item active">
-                <i class="fas fa-ticket-alt marketing-icon"><span class="marketing-text p-lg-3">كوبونات الخصم</span></i>
-                <label class="switch me-3">
-                  <input type="checkbox" checked>
-                  <span class="slider round"></span>
-                </label>
-              </div>
-              <div class="d-flex justify-content-evenly mb-3 toggle-item">
-                <i class="fas fa-percent marketing-icon"><span class="marketing-text p-lg-3">عروض وخصومات</span></i>
-                <label class="switch me-3">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <h3 class="pillar-card-title">أدوات التسويق</h3>
-              <p class="pillar-card-description">أطلق حملاتك التسويقية بكبسة زر وراقب النتائج لحظة بلحظة</p>
-            </div>
+ <!-- /* ================= START Pillar 2 (Marketing Tools) ================= */ -->
+<div class="col-lg-5 mb-4 d-flex">
+  <div class="pillar-card w-100 p-4">
+    <div class="row align-items-center m-auto">
+      
+      <!-- Toggle Options -->
+      <div class="col-12 marketing-tools-content">
+
+        <!-- Option 1: Active -->
+        <div class="d-flex justify-content-between align-items-center mt-3 toggle-item active">
+          <div class="d-flex align-items-center gap-2">
+            <i class="fas fa-ticket-alt marketing-icon"></i>
+            <span class="marketing-text">كوبونات الخصم</span>
           </div>
+          <label class="switch me-1">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
         </div>
+
+        <!-- Option 2 -->
+        <div class="d-flex justify-content-between align-items-center toggle-item">
+          <div class="d-flex align-items-center gap-2">
+            <i class="fas fa-percent marketing-icon"></i>
+            <span class="marketing-text">عروض وخصومات</span>
+          </div>
+          <label class="switch ">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+
       </div>
+
+      <!-- Text Section -->
+      <div class="col-12">
+        <h3 class="pillar-card-title">أدوات التسويق</h3>
+        <p class="pillar-card-description">أطلق حملاتك التسويقية بكبسة زر وراقب النتائج لحظة بلحظة</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /* ================= END Pillar 2 ================= */ -->
+
 
       <!-- Pillar 3 -->
       <div class="col-lg-5 mb-5 d-flex">
@@ -315,37 +351,60 @@
         </div>
       </div>
 
-      <!-- Pillar 4 -->
-      <div class="col-lg-7 mb-5 d-flex">
-        <div class="pillar-card p-4 w-100">
-          <div class="row align-items-center">
-            <div class="col-12 payment-methods-content">
-              <div class="d-grid mb-3 toggle-item" style="grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px;">
-                <label class="switch me-3">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-                <span class="payment-amount">80.000 LE</span>
-                <span class="payment-date me-auto">28/4/2023</span>
-                <img src="assets/images/p3.png" alt="Visa" class="payment-logo me-2 img-fluid store-mockup float-soft img-fluid interactive-img">
-              </div>
-              <div class="d-grid mb-3 toggle-item active" style="grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px;">
-                <label class="switch me-3">
-                  <input type="checkbox" checked>
-                  <span class="slider round"></span>
-                </label>
-                <span class="payment-amount">80.000 LE</span>
-                <span class="payment-date me-auto">28/4/2023</span>
-                <img src="assets/images/p4.png" alt="MasterCard" class="payment-logo me-2 img-fluid store-mockup float-soft img-fluid interactive-img">
-              </div>
-            </div>
-            <div class="col-12">
-              <h3 class="pillar-card-title">وسائل الدفع</h3>
-              <p class="pillar-card-description">اختار طرق الدفع اللي تناسبك كل وسائل الدفع متاحة بسهولة وأمان</p>
-            </div>
-          </div>
+<!-- Pillar 4 -->
+<div class="col-lg-7 mb-5 d-flex">
+  <div class="pillar-card p-4 w-100">
+    <div class="row align-items-center">
+      <div class="col-12 payment-methods-content">
+
+        <!-- Payment Method 1 (Animated Visa) -->
+        <div class="d-grid mb-3 toggle-item align-items-center"
+             style="grid-template-columns: auto 1fr 1fr auto; gap: 30px;">
+          <label class="switch me-3">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <span class="payment-amount">80.000 LE</span>
+          <span class="payment-date me-auto">28/4/2023</span>
+          <dotlottie-wc
+            src="https://lottie.host/95c91379-09fe-4e4e-837d-347eaf2e177a/xvksePSkwX.lottie"
+            style="width: 80px; height: 80px;"
+            speed="0.75"
+            autoplay
+            loop="false">
+          </dotlottie-wc>
         </div>
+
+        <!-- Payment Method 2 (Animated MasterCard) -->
+        <div class="d-grid mb-3 toggle-item align-items-center"
+             style="grid-template-columns: auto 1fr 1fr auto; gap: 30px;">
+          <label class="switch me-3">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <span class="payment-amount">80.000 LE</span>
+          <span class="payment-date me-auto">28/4/2023</span>
+          <dotlottie-wc
+            src="https://lottie.host/51eb846c-d814-49af-b7d8-7080621488bf/If10m39ZQJ.lottie"
+            style="width: 80px; height: 80px;"
+            speed="0.75"
+            autoplay
+            loop>
+          </dotlottie-wc>
+        </div>
+
       </div>
+
+      <div class="col-12">
+        <h3 class="pillar-card-title">وسائل الدفع</h3>
+        <p class="pillar-card-description">
+          اختار طرق الدفع اللي تناسبك. كل وسائل الدفع متاحة بسهولة وأمان.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     </div>
   </div>
@@ -377,7 +436,7 @@
 <!-- /* ================= START All in One Place Section (7) ================= */ -->
 <section class="all-in-one-section py-5" id="goals">
   <div class="container">
-    <h2 class="section-title text-center mb-5" >كل شيء تحتاجه في مكان واحد</h2>
+    <h2 class="section-title text-center mb-5" >كل ما تحتاجة في مكان واحد</h2>
     <div class="row justify-content-center">
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="feature-card-alt text-center p-4" data-aos="fade-left">
@@ -406,7 +465,8 @@
     </div>
   </div>
 </section>
-<!-- /* ================= START Projects and Testimonials Section (8) ================== */ -->
+
+<!-- /* ================= START Download App Section (9) ================= */ -->
 <section class="projects-testimonials-section py-5 bg-light" id="projects">
   <div class="container">
     <h2 class="section-title text-center mb-5" data-aos="fade-up">مشاريع وتقييمات رمح</h2>
@@ -414,69 +474,109 @@
     <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
 
-        <!-- Carousel Slide Template (Repeat as needed) -->
+        <!-- Slide 1 -->
         <div class="carousel-item active">
           <div class="row justify-content-center">
-
-            <!-- Project Card -->
+            <!-- Card 1 -->
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
               <div class="project-card p-4 shadow rounded">
                 <h3 class="project-title text-center mb-3">المعجل للتجهيزات</h3>
                 <div class="browser-mockup mb-3 rounded overflow-hidden">
-                  <img src="assets/images/web2.png" alt="المعجل للتجهيزات - موقع إلكتروني" class="img-fluid w-100">
+                  <img src="assets/images/web2.png" class="img-fluid w-100" alt="المعجل">
                 </div>
-                <a href="https://almojel-eq.com/" target="_blank" class="btn btn-primary d-block mb-3">
+                <a href="#" target="_blank" class="btn btn-primary d-block mb-3">
                   <i class="fas fa-external-link-alt me-2"></i> زيارة الموقع
                 </a>
                 <div class="testimonial-box bg-white p-3 rounded shadow-sm">
                   <div class="d-flex align-items-center justify-content-between mb-2">
-                    <div>
-                      <strong class="text-warning">★ 4.9 / 5.0</strong>
-                    </div>
+                    <strong class="text-warning">★ 4.9 / 5.0</strong>
                     <span class="badge bg-secondary">متجر الكترونيات</span>
                   </div>
-                  <p class="testimonial-text small mb-2">
-                    تجربتي مع رمح فرضت حلم في بداية مشروعي، التسجيل كان سريع والإعداد أسهل مما توقعت. المنصة مرنة والدعم سريع وواضح.
-                  </p>
+                  <p class="testimonial-text small mb-2">تجربتي مع رمح فرضت حلم في بداية مشروعي...</p>
                   <div class="text-end">
-                    <img src="assets/images/web logo.svg" alt="شعار رمح" style="height: 24px;">
+                    <img src="assets/images/web logo.svg" style="height: 24px;" alt="شعار رمح">
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- Project Card 2 (مثال ثاني) -->
+            <!-- Card 2 -->
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
               <div class="project-card p-4 shadow rounded">
                 <h3 class="project-title text-center mb-3">سابورت سورس</h3>
                 <div class="browser-mockup mb-3 rounded overflow-hidden">
-                  <img src="assets/images/web1.png" alt="سابورت سورس - موقع إلكتروني" class="img-fluid w-100">
+                  <img src="assets/images/web1.png" class="img-fluid w-100" alt="سابورت سورس">
                 </div>
-                <a href="https://supportsource.net/ar/" target="_blank" class="btn btn-primary d-block mb-3">
+                <a href="#" target="_blank" class="btn btn-primary d-block mb-3">
                   <i class="fas fa-external-link-alt me-2"></i> زيارة الموقع
                 </a>
                 <div class="testimonial-box bg-white p-3 rounded shadow-sm">
                   <div class="d-flex align-items-center justify-content-between mb-2">
-                    <div>
-                      <strong class="text-warning">★ 4.9 / 5.0</strong>
-                    </div>
+                    <strong class="text-warning">★ 4.9 / 5.0</strong>
                     <span class="badge bg-secondary">متجر الكترونيات</span>
                   </div>
-                  <p class="testimonial-text small mb-2">
-                    المنصة مرنة والأدوات واضحة، وكل شيء بيشتغل بانسيابية. الدعم ساعدني في كل نقطة من البداية.
-                  </p>
+                  <p class="testimonial-text small mb-2">المنصة مرنة والأدوات واضحة...</p>
                   <div class="text-end">
-                    <img src="assets/images/web logo.svg" alt="شعار رمح" style="height: 24px;">
+                    <img src="assets/images/web logo.svg" style="height: 24px;" alt="شعار رمح">
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <!-- Card 3 -->
+            <div class="col-lg-6 mb-4" data-aos="fade-up">
+              <div class="project-card p-4 shadow rounded">
+                <h3 class="project-title text-center mb-3">مشروع ثالث</h3>
+                <div class="browser-mockup mb-3 rounded overflow-hidden">
+                  <img src="assets/images/web3.png" class="img-fluid w-100" alt="مشروع 3">
+                </div>
+                <a href="#" target="_blank" class="btn btn-primary d-block mb-3">
+                  <i class="fas fa-external-link-alt me-2"></i> زيارة الموقع
+                </a>
+                <div class="testimonial-box bg-white p-3 rounded shadow-sm">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <strong class="text-warning">★ 5.0 / 5.0</strong>
+                    <span class="badge bg-secondary">شركة خدمات</span>
+                  </div>
+                  <p class="testimonial-text small mb-2">فريق رائع، دعم ممتاز، وسرعة تنفيذ عالية.</p>
+                  <div class="text-end">
+                    <img src="assets/images/web logo.svg" style="height: 24px;" alt="شعار رمح">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-card p-4 shadow rounded">
+                <h3 class="project-title text-center mb-3">مشروع رابع</h3>
+                <div class="browser-mockup mb-3 rounded overflow-hidden">
+                  <img src="assets/images/web4.png" class="img-fluid w-100" alt="مشروع 4">
+                </div>
+                <a href="#" target="_blank" class="btn btn-primary d-block mb-3">
+                  <i class="fas fa-external-link-alt me-2"></i> زيارة الموقع
+                </a>
+                <div class="testimonial-box bg-white p-3 rounded shadow-sm">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <strong class="text-warning">★ 4.8 / 5.0</strong>
+                    <span class="badge bg-secondary">موقع شخصي</span>
+                  </div>
+                  <p class="testimonial-text small mb-2">تجربة ممتازة وسلاسة في التواصل.</p>
+                  <div class="text-end">
+                    <img src="assets/images/web logo.svg" style="height: 24px;" alt="شعار رمح">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Carousel Controls -->
+      <!-- Controls -->
       <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
         <span class="visually-hidden">السابق</span>
@@ -489,7 +589,7 @@
   </div>
 </section>
 
-<!-- /* ================= START Download App Section (9) ================= */ -->
+<!-- /* ================= START Download App Section (10) ================= */ -->
 <section class="download-app-section py-5">
   <div class="container">
     <div class="row align-items-center">
@@ -515,10 +615,9 @@
     </div>
   </div>
 </section>
-
         
 
-<!-- /* ================= START Contact Us Section (10) ================= */ -->
+<!-- /* ================= START Contact Us Section (11) ================= */ -->
 <section class="contact-us-section py-5" id="contact">
   <div class="container text-center contactback" data-aos="fade-up" data-aos-duration="1000">
     <p class="contact-text">في مشكلة مع رمح؟ كلم الدعم واحنا نساعدك فورا</p>
@@ -529,7 +628,7 @@
 
 
 
-<!-- /* ================= START Footer Section (11) ================= */ -->
+<!-- /* ================= START Footer Section (12) ================= */ -->
     <footer class="footer-section bg-light pt-5 pb-3">
     <div class="container">
         <div class="row justify-content-between align-items-start gy-4">
@@ -611,6 +710,8 @@
       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
       <!--  -->
       <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+      <!--Loti  -->
+      <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
 
     <!-- JS -->
      <script src="assets/JS/script.js"></script>

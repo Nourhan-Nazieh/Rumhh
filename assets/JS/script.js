@@ -70,3 +70,67 @@ if (currencyOptions.length > 0 && currencyButton) {
     glare: true,
     "max-glare": 0.2,
   });
+
+  // ================SECTION(3)===============
+  document.addEventListener('DOMContentLoaded', () => {
+  const fileInput = document.getElementById('fileInput');
+  const mainImageUploader = document.querySelector('.main-image-uploader');
+  const thumbUploader = document.querySelectorAll('.thumb-uploader');
+  const uploadedImagesContainer = document.querySelector('.uploaded-images');
+
+  // Main image uploader click
+  if (mainImageUploader && fileInput) {
+    mainImageUploader.addEventListener('click', () => fileInput.click());
+  }
+
+  // Thumbnail uploaders click
+  if (thumbUploader.length > 0 && fileInput) {
+    thumbUploader.forEach((thumb) => {
+      thumb.addEventListener('click', () => fileInput.click());
+    });
+  }
+
+  // Image upload preview
+  if (fileInput && uploadedImagesContainer) {
+    fileInput.addEventListener('change', (event) => {
+      const files = event.target.files;
+      uploadedImagesContainer.innerHTML = ''; // clear old previews
+
+      Array.from(files).forEach((file) => {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          img.classList.add('img-thumbnail', 'me-2', 'mb-2');
+          img.style.maxWidth = '100px';
+          uploadedImagesContainer.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+      });
+    });
+  }
+});
+
+
+//  <======= Pillar 3=========>
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleItems = document.querySelectorAll(".toggle-item");
+
+    toggleItems.forEach((item) => {
+      const checkbox = item.querySelector("input[type='checkbox']");
+
+      checkbox.addEventListener("change", function () {
+        if (checkbox.checked) {
+          // Remove active from all
+          toggleItems.forEach((el) => el.classList.remove("active"));
+          // Add active to current
+          item.classList.add("active");
+        } else {
+          // Remove active from current if turned off
+          item.classList.remove("active");
+        }
+      });
+    });
+  });

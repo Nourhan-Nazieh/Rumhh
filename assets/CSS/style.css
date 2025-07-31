@@ -9,6 +9,8 @@
 
 html, body {
   overflow-x: hidden !important;
+  font-family: 'Almarai', sans-serif;
+
 }
 
 
@@ -91,7 +93,7 @@ a{
 
 /* ===========START Hero Section============= */
 .hero-section {
-    padding: 40px 0;
+    padding:0;
     background-image: url(../images/back.jpg);
     align-items: center;
     background-size: cover;
@@ -300,13 +302,22 @@ a{
 .start-store-section {
     padding-top: 80px;
     padding-bottom: 80px;   
-background-color: #e1eae163;}
+    background-color: #e1eae163;}
 
 .store-mockup {
     max-width: 100%;
     height: auto;
 }
-
+/* IMG *//* --- تنسيقات إضافية للتفاعل--- */
+.animationStart {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    animation: float-slow 30s ease-in-out infinite;
+    margin: auto;
+    display: block;
+  }
 
 
 
@@ -375,10 +386,9 @@ background-color: #e1eae163;}
 /* START More Than Section */
 .more-than-section {
     background-color: white;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    /* box-shadow: 0 4px 10px rgba(95, 147, 18, 0.056); */
-    margin-top: 100px !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 60px !important;
 
 }
 
@@ -521,6 +531,15 @@ background-color: #e1eae163;}
     color: #777;
     line-height: 1.5;
 }
+
+
+.responsive-lottie-web {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
 
 /* Custom Switch Styles */
 .switch {
@@ -669,7 +688,7 @@ input:checked + .slider:before {
     padding-bottom: 30px;
     margin-top: 80px;
     margin-bottom: 60px;
-    background-color: #30421d !important;
+    background-color: #4d8c50 !important;
 
 }
 
@@ -3890,7 +3909,7 @@ body.loaded::after {
 
 /* ----------------------- */
 /* تأثير تفاعلي على الصور */
-.interactive-img {
+/* .interactive-img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   will-change: transform;
   border-radius: 12px;
@@ -3902,22 +3921,25 @@ body.loaded::after {
   transform: scale(1.05) rotateZ(1deg);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-}
+} */
 
-/* ------------------- */
+/* ---------Img-lotifi---------- */
 .responsive-lottie {
-  width: 100%;
-  max-width: 650px;
+  width: 120%;
+  max-width: 2000px !important;
   height: auto;
   aspect-ratio: 1 / 1;
   animation: float-slow 30s ease-in-out infinite;
-  margin: auto;
   display: block;
+  padding: 0 !important;
+  margin: 0 !important;
+
+
 }
 
 .element.style{
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 
