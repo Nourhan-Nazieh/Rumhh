@@ -81,6 +81,7 @@
   </nav>
 </header>
 <!-- /* ================= START Hero Section (1) ================= */ -->
+ 
 <section class="hero-section" id="hero">
     <div class="container">
         <div class="row align-items-center m-0 p-0 m-lg-0">
@@ -103,23 +104,21 @@
                 </div>
             </div>
           <!-- Image Column (Left Side in RTL) -->
-          <div class="col-lg-6 text-center position-relative overflow-visible">
-            <div class="lottie-wrapper">
-              <dotlottie-wc
-                src="https://lottie.host/f91d735f-0b17-4f0a-a00d-f450a9e48112/HSrba9VF2G.lottie"
-                class="responsive-lottie"
-                speed="0.5"
-                autoplay
-                loop>
-              </dotlottie-wc>
-            </div>
+        <!-- Image Column (Left Side in RTL) -->
+        <div class="col-lg-6 text-center">
+          <div class="lottie-wrapper mx-auto">
+            <dotlottie-wc
+              src="https://lottie.host/f91d735f-0b17-4f0a-a00d-f450a9e48112/HSrba9VF2G.lottie"
+              class="responsive-lottie"
+              speed="0.5"
+              autoplay
+              loop>
+            </dotlottie-wc>
           </div>
-          
-
-
-            
-                </div>
-              </section>
+        </div>
+      </div>
+              
+    </section>
 
 <!-- /* ================= START Why Choose Ramh Section (2) ================= */ -->
 <section class="why-choose-ramh-section py-5" id="why-choose">
@@ -195,14 +194,19 @@
         </ul>
       </div>
 
-      <!-- الصورة -->
-      <div class="col-lg-6 text-center form-sidebar" data-aos="fade-right" id="form-sidebar">
-        <iframe src="https://lottie.host/embed/d632c848-e216-4489-a4b0-2adf859d874f/tXJDKPOIYf.lottie"  alt="Store Mockup" class="animationStart img-fluid store-mockup w-100 float-soft"></iframe>
+  <!-- الصورة -->
+      <div class="col-lg-6 text-center form-sidebar animationStart" data-aos="fade-right" id="form-sidebar">
+        <div class="responsive-lottie-wrapper">
+          <dotlottie-wc
+            src="https://lottie.host/58396f19-5c68-457e-af9e-465565577e64/w0BWZdy7kP.lottie"
+            class="responsive-lottie"
+            speed="1"
+            autoplay
+            loop>
+          </dotlottie-wc>
+        </div>
       </div>
-
-    </div>
-  </div>
-</section>
+ </section>
 
 <!-- /* ================= START More Than Section (4) ================= */ -->
 <section class="more-than-section py-5" id="why-choose">
@@ -251,6 +255,7 @@
 
 
 
+
  <!-- /* ================= START Pillars Section (5) ================= */ -->
 <section class="pillars-section py-5" id="features">
   <div class="container">
@@ -261,16 +266,16 @@
 
       <!-- Pillar 1 -->
       <div class="col-lg-7 mb-4 d-flex">
-        <div class="pillar-card p-4 w-100">
-          <div class="row align-items-center">
+        <div class="pillar-card w-100">
+          <div class="row align-items-center  ">
             <!-- im -->
-            <dotlottie-wc 
-            src="https://lottie.host/b9a35eae-8d88-4c4a-85f2-5cdd4686b7bd/VDwMYPtaf4.lottie"
-            class="responsive-lottie-web"
-            speed="0.75"
-            autoplay 
-            loop>
-          </dotlottie-wc>
+            <dotlottie-wc class="responsive-lottie-web "
+            src="https://lottie.host/bf2fc4e2-4fc3-41a0-83ca-178e1fc53b89/QNPy7tiW3O.lottie"
+            style="width: 400px;height: 250px"
+            speed="0.5"
+            autoplay
+            loop
+          ></dotlottie-wc>
           
             <div class="col-12">
               <h3 class="pillar-card-title">تصميم المتجر</h3>
@@ -282,14 +287,14 @@
 
  <!-- /* ================= START Pillar 2 (Marketing Tools) ================= */ -->
 <div class="col-lg-5 mb-4 d-flex">
-  <div class="pillar-card w-100 p-4">
+  <div class="pillar-card w-100">
     <div class="row align-items-center m-auto">
       
       <!-- Toggle Options -->
-      <div class="col-12 marketing-tools-content">
+      <div class="col-12 marketing-tools-content design gap-5">
 
         <!-- Option 1: Active -->
-        <div class="d-flex justify-content-between align-items-center mt-3 toggle-item active">
+        <div class="d-flex justify-content-between align-items-center mt-1 toggle-item active">
           <div class="d-flex align-items-center gap-2">
             <i class="fas fa-ticket-alt marketing-icon"></i>
             <span class="marketing-text">كوبونات الخصم</span>
@@ -353,9 +358,8 @@
           </div>
         </div>
       </div>
-
-<!-- Pillar 4 -->
-<div class="col-lg-7 mb-5 d-flex">
+      <!-- Pillar 4 -->
+      <div class="col-lg-7 mb-5 d-flex">
   <div class="pillar-card p-4 w-100">
     <div class="row align-items-center">
       <div class="col-12 payment-methods-content">
@@ -470,7 +474,7 @@
 </section>
 
 <!-- /* ================= START Download App Section (9) ================= */ -->
-<section class="projects-testimonials-section py-5 bg-light" id="projects">
+<section class="projects-testimonials-section py-5 " id="projects">
   <div class="container">
     <h2 class="section-title text-center mb-5" data-aos="fade-up">مشاريع وتقييمات رمح</h2>
 
@@ -596,6 +600,7 @@
 <section class="download-app-section py-5">
   <div class="container">
     <div class="row align-items-center">
+      <!-- Text content -->
       <div class="col-lg-6 text-lg-end text-center" data-aos="fade-up" data-aos-duration="1200">
         <h2 class="app-title">حمل تطبيقنا الآن!</h2>
         <p class="app-description">
@@ -610,14 +615,31 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-duration="1200">
-        <div class="phone-mockup">
-          <img src="assets/images/mob.png" alt="Phone Mockup" class="img-fluid mb-3 float-soft">
+
+      <!-- Swapping image & Lottie -->
+      <div class="col-lg-6 text-center position-relative" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="swap-container position-relative" style="width: 100%; height: 500px;">
+          <!-- Static Image -->
+          <img src="assets/images/mob.png" alt="Phone Mockup" class="img-fluid swap-item active" id="staticImage"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity 1s; opacity: 1;">
+
+          <!-- Lottie Animation -->
+          <dotlottie-wc
+            src="https://lottie.host/5a95411c-dc5a-43a1-8133-4bdc52abdd57/h8nK1gP0MI.lottie"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: opacity 1s; opacity: 0;"
+            speed="1"
+            autoplay
+            loop
+            id="lottieAnim">
+          </dotlottie-wc>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
         
 
 <!-- /* ================= START Contact Us Section (11) ================= */ -->

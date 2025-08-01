@@ -134,3 +134,20 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  // <!-- /* ================= START Contact Us Section (11) ================= */ -->
+  const staticImage = document.getElementById("staticImage");
+  const lottieAnim = document.getElementById("lottieAnim");
+
+  let showingImage = true;
+
+  setInterval(() => {
+    if (showingImage) {
+      staticImage.style.opacity = 0;
+      lottieAnim.style.opacity = 1;
+    } else {
+      staticImage.style.opacity = 1;
+      lottieAnim.style.opacity = 0;
+    }
+    showingImage = !showingImage;
+  }, 5000); // التبديل كل 5 ثواني
