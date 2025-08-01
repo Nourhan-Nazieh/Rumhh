@@ -544,7 +544,6 @@ a{
 
 .pillar-card .design{
     width: 100%;
-    height: 0% !important;
     
     
 }
@@ -560,7 +559,7 @@ a{
     font-size: 1.5rem;
     color: #388E3C;
     font-weight: bold;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .pillar-card-description {
@@ -2477,7 +2476,7 @@ body.loaded::after {
     .pillar-card-title {
         font-size: 1.4rem;
         text-align: center;
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
     }
     
     .pillar-card-description {
@@ -2503,22 +2502,35 @@ body.loaded::after {
     .pillar-card {
         padding: 20px 15px;
         margin-bottom: 20px;
+        text-align: center;
+
     }
     
     .pillar-card-title {
-        font-size: 1.3rem;
-        margin-bottom: 12px;
+        font-size: 1.2rem;
     }
     
     .pillar-card-description {
-        font-size: 0.9rem;
-    }
+        font-size: 0.95rem;
+        text-align: center;
+
+        }
     
     .switch {
         width: 35px;
         height: 20px;
     }
-    
+    .switch {
+        align-self: flex-end;
+      }
+
+
+      .marketing-tools-content .toggle-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
     .slider:before {
         height: 14px;
         width: 14px;
@@ -2545,7 +2557,7 @@ body.loaded::after {
     
     .pillar-card-title {
         font-size: 1.2rem;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
     }
     
     .pillar-card-description {
