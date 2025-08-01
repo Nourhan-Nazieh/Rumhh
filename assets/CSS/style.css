@@ -1201,6 +1201,12 @@ input:checked + .slider:before {
 }
 
 }
+@media (max-width: 768px) {
+  .swap-container {
+    height: 300px !important;
+  }
+}
+
 
 /* START Contact Us Section */
 .contact-us-section {

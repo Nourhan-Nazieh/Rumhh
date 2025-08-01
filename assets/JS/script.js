@@ -150,4 +150,4 @@ document.addEventListener("DOMContentLoaded", function () {
       lottieAnim.style.opacity = 0;
     }
     showingImage = !showingImage;
-  }, 5000); // التبديل كل 5 ثواني
+  }, 5000); // كل 5 ثواني يتبدل
